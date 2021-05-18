@@ -1,0 +1,163 @@
+body {
+	font-family: $font-family !important;
+	background: transparent;
+}
+
+.container {
+	max-width: 1460px !important;
+	@media screen and(max-width: 1194px) and(min-width:768px) {
+		max-width: 100% !important;
+		padding: 0px 40px !important;
+	}
+    @media screen and(max-width: 767px) and(min-width:320px) {
+	
+		padding: 0px 16px !important;
+	}
+}
+
+.container-xs {
+	max-width: 1216px !important;
+	@media screen and(max-width: 1194px) and(min-width:992px) {
+		max-width: 100% !important;
+		padding: 0px 105px !important;
+	}
+    @media screen and(max-width: 991px) and(min-width:320px) {
+		max-width: 100% !important;
+		padding: 0px 32px !important;
+	}
+  
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.pb-200 {
+	padding-bottom: 200px;
+    @media screen and(max-width: 1194px)and(min-width:768px) {
+		padding-bottom:180px;
+	}
+	@media screen and(max-width: 767px)and(min-width:320px) {
+		padding-bottom:100px;
+	}
+}
+
+.pb-135 {
+	padding-bottom: 135px;
+  
+	@media screen and(max-width: 767px)and(min-width:320px) {
+		padding-bottom:60px;
+	}
+}
+
+.heading-sm {
+	font-size: $medium-font;
+	line-height: 48px;
+	font-weight: bold;
+	@media screen and(max-width: 1194px) and(min-width:768px) {
+		font-size: 24px;
+		line-height: 48px;
+	}
+	@media screen and (max-width: 767px) and (min-width: 320px) {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+	span {
+		color: $primary;
+	}
+}
+
+.seperater {
+	height: 2px !important;
+	background-color: $gray-400;
+	opacity: 1;
+	max-width: 1190px;
+	margin: 0px auto;
+	@media screen and(max-width: 1194px) and(min-width:992px) {
+		max-width: 100% !important;
+		margin: 0px 105px !important;
+	}
+	@media screen and(max-width: 991px) and(min-width:320px) {
+		margin: 0px 32px !important;
+	}
+}
+
+.btn-header {
+	border-radius: 27px !important;
+	padding: 15px 44px !important;
+}
+
+.full-width {
+	max-width: 100%;
+	background: $gray-200;
+}
+
+.wrapper {
+	@media screen and(min-width: 1921px) {
+		max-width: 1920px;
+		width: 100%;
+		margin: 0px auto;
+	}
+}
+
+p {
+	&:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+
+button{
+    &:focus{
+        box-shadow:none !important;
+        outline:none !important;
+    }
+}
+
+
+/**app-btns**/
+.app-buttons {
+	margin-top: 40px;
+
+	@media screen and (max-width: 767px) and (min-width: 320px) {
+		padding-top: 40px !important;
+		justify-content: center;
+		margin: 0px auto !important;
+		display: flex;
+
+		img {
+			@media screen and (max-width: 767px) and (min-width: 320px) {
+				max-width: 124px;
+				width: 100%; 
+			}
+		}
+	}
+
+	.btn {
+		&:not(:last-child) {
+			margin-right: 24px;
+
+			@media screen and (max-width: 767px) and (min-width: 320px) {
+				margin-right: 16px;
+
+			}
+		}
+	}
+}
+
+
+::-webkit-input-placeholder {
+ color: rgba(141, 141, 141, 0.6) !important;
+
+  }
+  :-moz-placeholder {
+	color: rgba(141, 141, 141, 0.6) !important;
+  }
+ 
+  ::placeholder {
+	color: rgba(141, 141, 141, 0.6) !important;
+  }
+  :-ms-input-placeholder {
+	color: rgba(141, 141, 141, 0.6) !important;
+  }

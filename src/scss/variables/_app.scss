@@ -1,0 +1,34 @@
+// Theme colors
+$blue: #0C60FF !default;
+$blue-200: #0057ff;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #fafbff !default;
+$gray-300: #ebf0ff !default;
+$gray-400: #dae2f6 !default;
+$gray-500: #8d8d8d !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #45454b !default;
+$gray-900: #171731 !default;
+$black: #000 !default;
+
+$primary: $blue !default;
+
+$light: #f5f7fb !default;
+$dark: $gray-900 !default;
+
+$theme-colors: ("primary": $primary,
+
+) !default;
+
+
+$font-family:'Chivo', sans-serif ;
+
+
+
+$large-font:48px;
+$medium-font:32px;
+$normal-font:24px;
+$xsmall-font:16px;

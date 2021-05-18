@@ -1,0 +1,95 @@
+.flickit-navbar {
+	min-height: 100px;
+	padding: 0;
+
+	@media screen and (max-width: 1194px) and (min-width: 768px) {
+		min-height: 90px;
+	}
+
+	@media screen and (max-width: 767px) and (min-width: 320px) {
+		min-height: 70px;
+	}
+
+	.navbar-brand {
+		img {
+			max-width: 166px;
+			width: 100%;
+			@media screen and (max-width: 1194px) and (min-width: 320px) {
+				max-width: 152px;
+			}
+
+			@media screen and (max-width: 767px) and (min-width: 320px) {
+				max-width: 125px;
+			}
+		}
+	}
+
+	.navbar-nav {
+		margin-left: 120px;
+
+		@media screen and (max-width: 1194px) and (min-width: 768px) {
+			margin-left: 80px;
+		}
+
+		@media screen and (max-width: 991px) and (min-width: 320px) {
+			margin-left: 0;
+			margin-top: 40px;
+		}
+
+		.nav-item {
+			&:not(:last-child) {
+				margin-right: 54px;
+
+				@media screen and (max-width: 1194px) and (min-width: 1040px) {
+					margin-right: 44px;
+				}
+				@media screen and (max-width: 1039px) and (min-width: 992px) {
+					margin-right: 38px;
+				}
+
+				@media screen and (max-width: 991px) and (min-width: 320px) {
+					margin-right: 0;
+					margin-bottom: 20px;
+				}
+			}
+
+			.nav-link {
+				padding: 0;
+				font-size: 18px;
+				color: $gray-500;
+				@media screen and (max-width: 1194px) and (min-width: 991px) {
+					font-size: 16px;
+				}
+
+				&.active {
+					color: $primary;
+					border-bottom: 2px solid $blue;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.nav-right {
+		@media screen and (max-width: 991px) and (min-width: 320px) {
+			padding-left: 0;
+
+			padding-bottom: 30px;
+
+		}
+
+		.btn {
+			font-size: $xsmall-font;
+
+			&:not(:last-child) {
+				margin-right: 32px;
+
+			}
+		}
+
+		.btn-link {
+			color: $gray-500;
+			text-decoration: none;
+		}
+	}
+}
