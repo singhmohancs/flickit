@@ -157,8 +157,8 @@ const Home = () => {
                            exactly what you’re
                            paying for
                         </div>
-                        <p>We are building trust through complete transparency across board.Insurance that is
-                           customer-centric. Honest, fair, timely and transparent policies.
+                        <p>We are building trust through complete transparency across board. Insurance that is
+                           customer-centric. Honest, fair, timely and transparent policies
                         </p>
                      </div>
                   </div>
