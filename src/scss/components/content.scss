@@ -33,7 +33,7 @@
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			font-size: 24px;
 			line-height: 42px;
-			margin-bottom: 16px;
+			margin-bottom: 16px !important;
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
@@ -54,7 +54,7 @@
 		margin-bottom: 0;
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-			font-size: $xsmall-font;
+			font-size: $xsmall-font !important;
 			line-height: 27px;
 			text-align: center;
 		}
@@ -363,7 +363,8 @@
 
 	@media screen and(max-width: 767px)and(min-width:320px) {
 		padding: 32px 0px;
-		min-height: auto;
+		min-height: 333px;
+		height:100%;
 	}
 
 	@media screen and(max-width:1194px) and(min-width:768px) {
@@ -376,6 +377,7 @@
 
 		@media screen and(max-width: 767px)and(min-width:320px) {
 			padding: 0px 32px;
+			margin-top: 24px;
 
 		}
 
@@ -392,12 +394,11 @@
 			font-size: $xsmall-font;
 			line-height: 27px;
 			margin-bottom: 16px !important;
-			padding-left: 30px !important;
+			padding-left: 28px !important;
 
 			&:before {
 				width: 16px;
-
-				top: 25%;
+				top: 14%;
 
 			}
 
@@ -433,8 +434,11 @@
 
 	&.right-area {
 		background: $primary;
-		border: 2px solid $primary;
+		@media screen and (max-width: 767px) and (min-width: 320px) {
+			padding: 32px 0px 42px;
+		}
 
+		
 		.heading-sm {
 			color: $white;
 
@@ -703,9 +707,6 @@
 		p {
 			font-size: $normal-font;
 
-			@media screen and (max-width: 767px) and (min-width: 320px) {
-				font-size: 16px;
-			}
 		}
 	}
 }

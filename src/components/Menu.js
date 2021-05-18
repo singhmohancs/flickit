@@ -13,10 +13,10 @@ const Menu = () => {
               </LinkContainer>
        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <img src={iconMenu} />
+          <span class="navbar-toggler-icon">  <img alt="icon-toogle" src={iconMenu} /></span>
+        
        </button>
-       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-collapse collapse " id="navbarNavAltMarkup">
           <ul class="navbar-nav mr-0 me-auto mb-2 mb-lg-0">
              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Insurance</a>
