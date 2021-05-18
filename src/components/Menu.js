@@ -11,7 +11,7 @@ const Menu = () => {
           <LinkContainer to='/'>
                 <a className="navbar-brand m-0" href="#"><img src={companyLogo} /></a>
               </LinkContainer>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+       <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <img src={iconMenu} />

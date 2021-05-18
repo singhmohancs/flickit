@@ -81,12 +81,12 @@ const Home = () => {
          <section class="flickit-services service-2   pb-200">
             <div class="container container-xs">
                <div class="flickit-row row flex-row-reverse d-flex align-items-center">
-                  <div class="col-md-6 col-lg-6 col-xl-5">
+                  <div class="col-md-6 col-lg-5 col-xl-5">
                      <div class="flickit-image">
                         <img alt="illustration-2" src={require('../static/img/illustration-2.png').default} />
                      </div>
                   </div>
-                  <div class="col-md-6 col-lg-6 col-xl-7">
+                  <div class="col-md-6 col-lg-7 col-xl-7">
                      <div class="flickit-content">
                         <div class="flickit-heading"><span>Purchase a cover </span> with a few
                            clicks, flexible
@@ -101,7 +101,7 @@ const Home = () => {
                </div>
             </div>
          </section>
-         <section class="flickit-services service-3  pb-200">
+         <section class="flickit-services service-3  pb-220">
             <div class="container  container-xs">
                <div class="flickit-row row d-flex align-items-center">
                   <div class="col-md-6">
@@ -126,12 +126,12 @@ const Home = () => {
          <section class="flickit-services service-4  pb-135">
             <div class="container  container-xs">
                <div class="flickit-row row flex-row-reverse d-flex align-items-center">
-                  <div class="col-md-6 col-lg-6 col-xl-7">
+                  <div class="col-md-6 col-lg-6 col-xl-6">
                      <div class="flickit-image">
                         <img alt="illustration-4"  src={require('../static/img/illustration-4.png').default} />
                      </div>
                   </div>
-                  <div class="col-md-6 col-lg-6 col-xl-5">
+                  <div class="col-md-6 col-lg-6 col-xl-6">
                      <div class="flickit-content">
                         <div class="flickit-heading"><span>Pay bills easily.</span> View proof
                            of insurance
@@ -157,8 +157,8 @@ const Home = () => {
                            exactly what you’re
                            paying for
                         </div>
-                        <p>We are building trust through complete transparency across board.Insurance that is
-                           customer-centric. Honest, fair, timely and transparent policies.
+                        <p>We are building trust through complete transparency across board. Insurance that is
+                           customer-centric. Honest, fair, timely and transparent policies
                         </p>
                      </div>
                   </div>
