@@ -62,8 +62,8 @@
 				}
 
 				&.active {
-					color: $primary;
-					border-bottom: 2px solid $blue;
+					color: $blue-200;
+					border-bottom: 2px solid $primary;
 					font-weight: bold;
 				}
 			}

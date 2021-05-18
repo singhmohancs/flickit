@@ -1,9 +1,21 @@
 .flickit-content {
 	&.centered {
 		width: 100%;
-		max-width: 860px;
-		margin: 0px auto;
-		text-align: center;
+
+		.flickit-heading {
+			max-width: 890px;
+
+			margin: 0px auto 32px;
+			text-align: center;
+
+		}
+
+		p {
+			max-width: 950px;
+			margin: 0px auto;
+			text-align: center;
+		}
+
 
 	}
 
@@ -94,7 +106,7 @@
 		&:before {
 			content: '';
 			position: absolute;
-		
+
 			background-image: url("../../static/img/icon-checkmark.png");
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -131,9 +143,10 @@
 
 .flickit-services {
 	&.service-1 {
-		margin-top:20px;
+		margin-top: 20px;
+
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
-			
+
 			.flickit-row {
 				.flickit-image {
 					img {
@@ -141,10 +154,12 @@
 					}
 
 				}
-				.flickit-content{
-					padding-left:0;
-					.flickit-list{
-						margin-top:32px;
+
+				.flickit-content {
+					padding-left: 0;
+
+					.flickit-list {
+						margin-top: 32px;
 					}
 				}
 
@@ -154,19 +169,20 @@
 
 
 	}
+
 	&.service-2 {
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			.flickit-row {
 				.flickit-content {
-				p{
-					
-    max-width: 457px;
-	width:100%;
+					p {
 
+						max-width: 457px;
+						width: 100%;
+
+					}
 				}
-				}
-		
-			
+
+
 
 			}
 		}
@@ -207,6 +223,19 @@
 	}
 
 	&.service-4 {
+		.flickit-content {
+			p {
+				max-width: 555px;
+
+				@media screen and (max-width: 767px) and (min-width: 320px) {
+					max-width: 100%;
+					margin: 0px auto;
+
+				}
+			}
+
+		}
+
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			.flickit-row {
 				.flickit-image {
@@ -237,7 +266,7 @@
 
 			p {
 				max-width: 500px;
-				
+
 
 				@media screen and (max-width: 767px) and (min-width: 320px) {
 					max-width: 100%;
@@ -279,11 +308,16 @@
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
 		padding-top: 120px;
-		.flickit-heading{
-			width:100%;
-			max-width:722px;
-			margin:0px auto 24px;
 
+		.flickit-heading {
+			width: 100%;
+			max-width: 722px !important;
+			margin: 0px auto 24px;
+
+		}
+		p{
+			max-width: 100% !important;
+			padding: 0px 42px;
 		}
 
 	}
@@ -318,10 +352,11 @@
 	box-sizing: border-box;
 	box-shadow: -8px 16px 42px rgba(23, 23, 49, 0.08);
 	border-radius: 8px;
-	.heading-sm{
+
+	.heading-sm {
 		@media screen and(max-width: 767px)and(min-width:320px) {
 			padding: 0px 24px;
-			
+
 		}
 
 	}
@@ -338,11 +373,12 @@
 
 	.flickit-list {
 		margin-top: 32px;
+
 		@media screen and(max-width: 767px)and(min-width:320px) {
 			padding: 0px 32px;
-		
+
 		}
-	
+
 	}
 
 	li {
@@ -350,6 +386,7 @@
 		line-height: 30px;
 		margin-bottom: 24px !important;
 		font-weight: 400;
+		color:$gray-100;
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			font-size: $xsmall-font;
@@ -382,7 +419,11 @@
 
 	&.left-area {
 		background: $white;
-		border: 2px solid #f1f1f1;
+		border: 2px solid $white-50;
+		.heading-sm{
+			color:$gray-dark;
+
+		}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			margin-bottom: 24px !important;
@@ -396,18 +437,18 @@
 
 		.heading-sm {
 			color: $white;
-			
-		@media screen and (max-width: 1194px) and (min-width: 768px) {
-			font-size: 32px;
-			line-height: 48px;
-		}
+
+			@media screen and (max-width: 1194px) and (min-width: 768px) {
+				font-size: 32px;
+				line-height: 48px;
+			}
 		}
 
 		li {
 			color: $white;
 
 			&:before {
-			
+
 				background-image: url("../../static/img/icon-checkmark-white.png");
 			}
 		}
@@ -443,10 +484,11 @@
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			padding-bottom: 40px;
-			img{
-				width:100%;
-				max-width:443px;
-				margin:0px auto;
+
+			img {
+				width: 100%;
+				max-width: 443px;
+				margin: 0px auto;
 			}
 
 		}
@@ -459,16 +501,18 @@
 	.flickit-content {
 		text-align: center;
 		padding: 0px 30px;
+
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			padding: 0px 40px;
 		}
-		p{
+
+		p {
 			@media screen and (max-width: 1194px) and (min-width: 768px) {
-				
-					font-size: 24px !important;
-				  line-height: 40px  !important;
-	
-				
+
+				font-size: 24px !important;
+				line-height: 40px !important;
+
+
 			}
 		}
 
@@ -482,11 +526,11 @@
 					max-width: 282px;
 					text-align: center;
 					margin: 0px auto 16px;
-					
-		
+
+
 
 				}
-				
+
 			}
 		}
 	}
@@ -542,20 +586,22 @@
 
 .flickit-download-app-sec {
 	padding: 100px 0px;
-.container-xs{
-	@media screen and (max-width: 1194px) and (min-width: 1024px) {
-		padding: 0px 22px 0px 105px !important;
 
-	}
-	.flickit-content{
-		.app-buttons{
-			@media screen and (max-width: 1194px) and (min-width: 991px) {
-			margin-top:32px !important;
+	.container-xs {
+		@media screen and (max-width: 1194px) and (min-width: 1024px) {
+			padding: 0px 22px 0px 105px !important;
+
 		}
 
-	}
-	
-}
+		.flickit-content {
+			.app-buttons {
+				@media screen and (max-width: 1194px) and (min-width: 991px) {
+					margin-top: 32px !important;
+				}
+
+			}
+
+		}
 
 	}
 
@@ -598,7 +644,7 @@
 			position: absolute;
 			width: 100%;
 			z-index: -1;
-		
+
 			background-image: url("../../static/img/bg-deco.png");
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -611,7 +657,7 @@
 			}
 
 			@media screen and (max-width: 1194px) and (min-width: 568px) {
-				display:none;
+				display: none;
 
 			}
 		}
@@ -619,16 +665,17 @@
 
 	.flickit-content {
 		max-width: 572px;
-		
-	
-		
+
+
+
 		@media screen and (max-width: 1194px) and (min-width: 991px) {
 			max-width: 100%;
-		    margin-left: 59px;
-			
+			margin-left: 59px;
+
 		}
+
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
-			.heading-sm{
+			.heading-sm {
 				font-size: 42px !important;
 
 			}
