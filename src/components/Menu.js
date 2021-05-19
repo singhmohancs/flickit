@@ -19,7 +19,7 @@ const Menu = () => {
        <div class="navbar-collapse collapse " id="navbarNavAltMarkup">
           <ul class="navbar-nav mr-0 me-auto mb-2 mb-lg-0">
              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Insurance</a>
+                <a class="nav-link" aria-current="page" href="#">Insurance</a>
              </li>
              <li class="nav-item">
                 <a class="nav-link" href="#"> Company</a>
@@ -28,7 +28,7 @@ const Menu = () => {
                 <a class="nav-link" href="#"> Help</a>
              </li>
              <li class="nav-item">
-                <a class="nav-link" href="#"> About Us</a>
+             <LinkContainer to='/about' className="nav-link"><a class="nav-link" href="#"> About Us</a></LinkContainer>
              </li>
           </ul>
 
