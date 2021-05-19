@@ -16,8 +16,7 @@ const About = () => {
                <div class="row flickit-row d-flex align-items-center justify-content-center">
                   <div class="col-md-12">
                      <div class="flickit-content">
-                        <div class="flickit-heading">We’re <span>Happy</span> when you’re <span>Happy</span>
-                        </div>
+                        <div class="flickit-heading">About Us</div>
                         <p>Our core focus is on delivering a delightful user experience. We
                            guarantee quality
                            customer service on all our products and ensure seamless user
