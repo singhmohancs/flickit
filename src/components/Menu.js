@@ -1,8 +1,8 @@
-import { Navbar, Nav, Container } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
 import companyLogo from '../static/img/Logo.png';
 import iconMenu from '../static/img/icon-menu.png';
+import ComingSoon from './ComingSoon';
 
 const Menu = () => {
   return (
@@ -34,7 +34,7 @@ const Menu = () => {
 
           <ul class="mb-0 pl-0 d-flex nav-right">
              <button type="button" class="p-0 btn btn-link">Sign in</button>
-             <button type="button" class="btn-header btn btn-primary">Get a quote</button>
+             <ComingSoon styleClass="btn-header btn btn-primary" />
           </ul>
        </div>
     </div>
