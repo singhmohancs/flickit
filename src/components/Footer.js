@@ -1,3 +1,4 @@
+import { LinkContainer } from 'react-router-bootstrap'
 const Footer = () => {
   const year = new Date().getFullYear()
   return (
@@ -30,7 +31,7 @@ const Footer = () => {
                         <li><a href="#">Insurance </a></li>
                         <li><a href="#">Company </a></li>
                         <li><a href="#">Help</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><LinkContainer to='/about'><a href="#"> About Us</a></LinkContainer></li>
                      </ul>
                   </div>
 
