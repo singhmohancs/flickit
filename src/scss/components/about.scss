@@ -1,0 +1,153 @@
+.about-banner {
+    background-color: $gray-200;
+
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
+    .flickit-image {
+        max-width: 600px;
+        margin: 0px auto;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+
+}
+
+
+.about-sec {
+    .flickit-content {
+        p {
+            width: 100%;
+            max-width: 720px;
+            margin: 0px auto;
+        }
+
+        .flickit-list {
+          
+
+            li {
+            
+                font-size: 22px;
+                
+            }
+        }
+    }
+
+    .flickit-image {
+        img {
+            max-width: 500px;
+        }
+
+    }
+}
+
+.card {
+    &.custom-card {
+
+        align-items: center;
+
+        box-shadow: -8px 16px 42px rgba(23, 23, 49, 0.08);
+        border: none;
+
+        padding: 15px 20px;
+        margin-top: 30px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &:hover {
+            background-color: $primary;
+            color: #fff;
+
+            p {
+                color: #fff !important;
+
+            }
+        }
+
+        .card-icon {
+            max-width: 54px;
+            width: 100%;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+
+            }
+
+        }
+
+        .card-body {
+            padding: 0;
+
+            h5 {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+
+                font-weight: 400;
+                color: #444a4b;
+            }
+
+        }
+
+
+    }
+}
+
+.testimonial-view {
+    max-width: 900px;
+   
+    margin: 0 auto 70px auto;
+    border-radius: 3px;
+    .testimonial-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .testimonial_user_image{
+            img{
+                width:100px;
+                height:100px;
+                border-radius: 50%;
+
+        }
+
+        }
+        .testimonial_user_name{
+            font-size: 14px;
+            color:$gray-100;
+            margin-top:12px;
+        }
+        .testimonial-block_content{
+            p{
+                font-size: 18px;
+                line-height: 40px;
+            }
+
+        }
+    }
+}
+
+.carousel-control {
+
+    background: $primary;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.carousel-inner{
+    overflow:inherit;
+}
