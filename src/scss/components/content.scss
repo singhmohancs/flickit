@@ -3,15 +3,15 @@
 		width: 100%;
 
 		.flickit-heading {
-			max-width: 854px;
+			max-width: rem(854px);
 
-			margin: 0px auto 32px;
+			margin: 0px auto rem(32px);
 			text-align: center;
 
 		}
 
 		p {
-			max-width: 950px;
+			max-width: rem(950px);
 			margin: 0px auto;
 			text-align: center;
 		}
@@ -21,8 +21,8 @@
 
 	.flickit-heading {
 		font-size: $large-font;
-		line-height: 74px;
-		margin-bottom: 32px;
+		line-height: rem(74px);
+		margin-bottom: rem(32px);
 		font-weight: bold;
 		color: $gray-900;
 
@@ -32,14 +32,14 @@
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			font-size: rem(24px);
-			line-height: 42px;
-			margin-bottom: 16px !important;
+			line-height: rem(42px);
+			margin-bottom: rem(16px) !important;
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
 			font-size: rem(42px);
-			line-height: 64px;
-			margin-bottom: 24px;
+			line-height: rem(64px);
+			margin-bottom: rem(24px);
 		}
 
 		span {
@@ -49,29 +49,29 @@
 
 	p {
 		font-size: $normal-font;
-		line-height: 40px;
+		line-height: rem(40px);
 		color: $gray-800;
 		margin-bottom: 0;
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			font-size: $xsmall-font !important;
-			line-height: 27px;
+			line-height: rem(27px);
 			text-align: center;
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
 			font-size: rem(20px) !important;
-			line-height: 34px;
+			line-height: rem(34px);
 		}
 	}
 }
 
 .flickit-list {
-	margin-top: 40px;
+	margin-top: rem(40px);
 	margin-bottom: 0;
 
 	@media screen and (max-width: 767px) and (min-width: 320px) {
-		margin-top: 32px;
+		margin-top: rem(32px);
 	}
 
 	li {
@@ -80,26 +80,28 @@
 		line-height: 36px;
 		font-weight: bold;
 		position: relative;
-		padding-left: 55px;
+		padding-left: rem(55px);
+
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			font-size:  rem(18px);
-			line-height: 30px;
+			line-height: rem(30px);
+			padding-left: rem(50px);
 
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
 			font-size:  rem(22px);
-			line-height: 33px;
+			line-height: rem(33px);
 
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 32px;
+			margin-bottom: rem(32px);
 		
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
-				margin-bottom: 24px;
+				margin-bottom: rem(24px);
 			}
 		}
 
@@ -110,8 +112,8 @@
 			background-image: url("../../static/img/icon-checkmark.png");
 			background-repeat: no-repeat;
 			background-size: contain;
-			width: 26px;
-			height: 18px;
+			width: rem(26px);
+			height: rem(18px);
 			top: 50%;
 			transform: translateY(-50%);
 			left: 0;
@@ -120,6 +122,8 @@
 				top: 18%;
 				transform: none;
 				left: 0;
+				width: rem(24px);
+				height: rem(22px);
 			}
 
 		}
@@ -133,8 +137,8 @@
 	@media screen and(max-width: 767px)and(min-width:320px) {
 		img {
 			width: 100%;
-			max-width: 197px;
-			margin: 60px auto 0px;
+			max-width: rem(197px);
+			margin: rem(60px) auto 0px;
 		}
 	}
 }
@@ -143,15 +147,15 @@
 
 .flickit-services {
 	&.service-1 {
-		margin-top: 20px;
+		margin-top: rem(20px);
 	
 		.flickit-row {
-			max-width:1226px;
+			max-width:rem(1226px);
 			width:100%;
 			margin: 0px auto;
 			.flickit-image {
 				img {
-					width: 370px;
+					width: rem(370px);
 				}
 
 			}
@@ -162,7 +166,7 @@
 			.flickit-row {
 				.flickit-image {
 					img {
-						width: 320px;
+						width: rem(320px);
 					}
 
 				}
@@ -171,7 +175,7 @@
 					padding-left: 0;
 
 					.flickit-list {
-						margin-top: 32px;
+						margin-top: rem(32px);
 					}
 				}
 
@@ -184,13 +188,16 @@
 
 	&.service-2 {
 		.flickit-row {
-			max-width:1195px;
+			max-width:rem(1195px);
 			width:100%;
 			margin: 0px auto;
 			
 			.flickit-image {
 				img {
-					max-width: 313px;
+					max-width: rem(313px);
+					@media screen and (max-width: 767px) and (min-width: 320px) {
+						max-width:192px;
+					}
 
 				}
 
@@ -202,7 +209,7 @@
 				.flickit-content {
 					p {
 
-						max-width: 457px;
+						max-width: rem(457px);
 						width: 100%;
 
 					}
@@ -217,12 +224,15 @@
 
 	&.service-3 {
 		.flickit-row {
-			max-width:1196px;
+			max-width:rem(1196px);
 			width:100%;
 			margin: 0px auto;
 			.flickit-image {
 				img {
-					max-width: 444px;
+					max-width: rem(444px);
+					@media screen and (max-width: 767px) and (min-width: 320px) {
+						max-width:270px;
+					}
 
 				}
 
@@ -230,7 +240,7 @@
 
 		}
 		.flickit-content {
-			max-width: 576px;
+			max-width: rem(576px);
 			margin: 0px auto;
 		}
 
@@ -238,7 +248,10 @@
 			.flickit-row {
 				.flickit-image {
 					img {
-						max-width: 350px;
+						max-width: rem(350px);
+						@media screen and (max-width: 767px) and (min-width: 320px) {
+							max-width:219px;
+						}
 
 					}
 
@@ -250,7 +263,7 @@
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			.flickit-image {
 				img {
-					max-width: 270px;
+					max-width: rem(270px);
 					width: 100%;
 
 				}
@@ -263,12 +276,16 @@
 
 	&.service-4 {
 		.flickit-row {
-			max-width:1235px;
+			max-width:rem(1235px);
 			width:100%;
 			margin: 0px auto;
 			.flickit-image {
 				img {
-					max-width: 420px;
+					max-width: rem(420px);
+					@media screen and (max-width: 767px) and (min-width: 320px) {
+						max-width:219px;
+		
+					}
 
 				}
 
@@ -290,7 +307,7 @@
 			.flickit-row {
 				.flickit-image {
 					img {
-						max-width: 306px;
+						max-width: rem(306px);
 					}
 
 				}
@@ -310,7 +327,7 @@
 		.flickit-content {
 		
 			p {
-				max-width: 500px;
+				max-width: rem(500px);
 
 
 				@media screen and (max-width: 767px) and (min-width: 320px) {
@@ -339,92 +356,109 @@
 /**total-trans-sec**/
 
 .flickit-total-trans-sec {
-	padding-top: 160px;
-	padding-bottom: 60px;
+	padding-top: rem(160px);
+	padding-bottom: rem(60px);
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
-		padding-top: 120px;
+		padding-top: rem(120px);
 
 		.flickit-heading {
 			width: 100%;
-			max-width: 722px !important;
+			max-width: rem(722px) !important;
 			margin: 0px auto 24px;
 
 		}
 		p{
 			max-width: 100% !important;
-			padding: 0px 42px;
+			padding: 0px rem(42px);
 		}
 
 	}
 
 	@media screen and(max-width: 767px)and(min-width:320px) {
-		padding-top: 60px;
-		padding-bottom: 40px;
+		padding-top: rem(60px);
+		padding-bottom: rem(40px);
 	}
 }
 
 /**list-sec**/
 
 .flickit-list-sec {
-	padding: 82px 0px;
+	padding: rem(82px) 0px;
+	.trans-list-col-right{
+		padding-left:15px;
+		@media screen and(max-width: 767px)and(min-width:320px) {
+			padding-left:0;
+		}
+	}
+	.trans-list-col-left{
+		padding-right:15px;
+		@media screen and(max-width: 767px)and(min-width:320px) {
+			padding-right:0;
+		}
+	}
 	.flickit-row{
-		max-width:1196px;
+		max-width:rem(1196px);
 		width:100%;
 		margin: 0px auto;
 
 	}
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
-		padding: 60px 0px;
+		padding: rem(60px) 0px;
 		.container-xs{
-			padding:0px 102px !important;
+			padding:0px rem(102px) !important;
 		}
 
 	}
 
 	@media screen and(max-width: 767px)and(min-width:320px) {
-		padding: 40px 0px;
+		padding: rem(40px) 0px;
 	}
 }
 
 /**list**/
 .flickit-service-list {
-	min-height: 426px;
+	min-height: rem(426px);
 	height: 100%;
 	background: $white;
-	padding: 40px 107px 0px 60px;
+	padding: rem(40px) rem(107px) rem(0px) rem(60px);
 	box-sizing: border-box;
 	box-shadow: -8px 16px 42px rgba(23, 23, 49, 0.08);
-	border-radius: 8px;
-	width: 583px;
+	border-radius: rem(8px);
+	max-width: rem(583px);
+	width:100%;
+	@media screen and(max-width: 767px)and(min-width:320px) {
+		max-width: 100%;
+	}
 
 	.heading-sm {
 		@media screen and(max-width: 767px)and(min-width:320px) {
-			padding: 0px 24px;
+			padding: 0px rem(24px);
 
 		}
 
 	}
 
 	@media screen and(max-width: 767px)and(min-width:320px) {
-		padding: 32px 0px;
-		min-height: 333px;
+		padding: rem(32px) 0px;
+		min-height: rem(333px);
 		height:100%;
 	}
 
 	@media screen and(max-width:1194px) and(min-width:768px) {
-		padding: 32px 45px 0px 40px;
-		min-height: 368px;
-		width:480px;
+		padding: rem(32px) rem(45px) rem(0px) rem(40px);
+		min-height: rem(368px);
+		width:100%;
+		max-width:rem(480px);
 	}
 
 	.flickit-list {
-		margin-top: 32px;
+		margin-top: rem(32px);
 
 		@media screen and(max-width: 767px)and(min-width:320px) {
-			padding: 0px 32px;
-			margin-top: 24px;
+			padding: 0px rem(32px);
+			margin-top: rem(24px);
 
 		}
 
@@ -432,27 +466,29 @@
 
 	li {
 		font-size:  rem(20px);
-		line-height: 30px;
-		margin-bottom: 24px !important;
+		line-height: rem(30px);
+		margin-bottom: rem(24px) !important;
 		font-weight: 400;
 		color:$gray-20;
-		    padding-left: 50px;
+		    padding-left: rem(50)px;
 			&:before {
-				width: 24px;
-           height: 22px;
+				width: rem(24px);
+           height: rem(22px);
 			
 
 			}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			font-size: $xsmall-font;
-			line-height: 27px;
-			margin-bottom: 16px !important;
-			padding-left: 28px !important;
+			line-height: rem(27px);
+			margin-bottom: rem(16px) !important;
+			padding-left: rem(28px) !important;
 
 			&:before {
-				width: 16px;
-				top: 14%;
+				width: rem(16px);
+				top: 23%;
+		
+    height: rem(14px);
 
 			}
 
@@ -460,11 +496,11 @@
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
 			font-size: $xsmall-font !important;
-			line-height: 24px;
-			padding-left: 30px !important;
+			line-height: rem(24px);
+			padding-left: rem(30px) !important;
 
 			&:before {
-				width: 16px;
+				width: rem(16px);
 
 
 			}
@@ -481,7 +517,7 @@
 		}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-			margin-bottom: 24px !important;
+			margin-bottom: rem(24px) !important;
 			height: auto;
 		}
 	}
@@ -498,7 +534,7 @@
 
 			@media screen and (max-width: 1194px) and (min-width: 768px) {
 				font-size:  rem(32px);
-				line-height: 48px;
+				line-height: rem(48px);
 			}
 		}
 
@@ -515,37 +551,40 @@
 
 /**happy-sec**/
 .flickit-happy-sec {
-	padding: 120px 0px;
+	padding: rem(120px) 0px;
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
 		.container-xs{
-			padding:0px 169px !important;
+			padding:0px rem(169px) !important;
 	
 		}
 	}
 	
 	.flickit-row{
-		max-width: 1124px;
+		max-width: rem(1124px);
 		margin: 0px auto;
 		width:100%;
 	}
 	img{
-		max-width:555px;
+		max-width:rem(555px);
+		@media screen and (max-width: 767px) and (min-width: 320px) {
+			max-width:rem(248px);
+		}
 	}
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
-		padding: 100px 0px;
+		padding: rem(100px) 0px;
 
 	}
 
 	@media screen and (max-width: 767px) and (min-width: 320px) {
-		padding: 80px 0px;
+		padding: rem(80px) 0px;
 
 		.flickit-row {
 			flex-direction: column-reverse;
 		}
 
 		img {
-			max-width: 248px;
+			max-width: rem(248px);
 		}
 	}
 
@@ -553,14 +592,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-bottom: 60px;
+		padding-bottom: rem(60px);
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
-			padding-bottom: 40px;
+			padding-bottom: rem(40px);
 
 			img {
 				width: 100%;
-				max-width: 443px;
+				max-width: rem(443px);
 				margin: 0px auto;
 			}
 
@@ -579,7 +618,7 @@
 			@media screen and (max-width: 1194px) and (min-width: 768px) {
 
 				font-size:  rem(24px)!important;
-				line-height: 40px !important;
+				line-height: rem(40px) !important;
 
 
 			}
@@ -592,7 +631,7 @@
 				padding: 0px;
 
 				.flickit-heading {
-					max-width: 282px;
+					max-width: rem(282px);
 					text-align: center;
 					margin: 0px auto 16px;
 
@@ -608,16 +647,16 @@
 /**newsletter**/
 
 .flickit-newsletter-sec {
-	padding: 91px 0px;
+	padding: rem(91px) 0px;
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
-		padding: 80px 0px;
+		padding: rem(80px) 0px;
 
 	}
 
 	.container-xs {
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-			padding: 0px 16px !important;
+			padding: 0px rem(16px) !important;
 
 		}
 	}
@@ -628,25 +667,25 @@
 
 	.heading-sm {
 		color: $gray-900;
-		max-width: 742px;
+		max-width: rem(742px);
 		margin: 0px auto;
 		text-align: center;
-		line-height: 62px;
+		line-height: rem(62px);
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			max-width: 100%;
 			font-size:  rem(24px) !important;
-			line-height: 42px !important;
-			padding: 0px 8px !important;
+			line-height: rem(42px) !important;
+			padding: 0px rem(8px) !important;
 		}
 
 		@media screen and (max-width: 567px) and (min-width: 320px) {
-			max-width: 311px;
+			max-width: rem(311px);
 		}
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			font-size:  rem(32px);
-			line-height: 62px !important;
+			line-height: rem(62px) !important;
 		}
 	}
 }
@@ -654,28 +693,28 @@
 /**download-app**/
 
 .flickit-download-app-sec {
-	padding: 100px 0px;
+	padding: rem(100px) 0px;
 	.flickit-row {
-		max-width:1183px;
+		max-width:rem(1183px);
 		margin:0px auto;
 
 	}
 	.flickit-content {
 	img{
-		max-width:152px;
+		max-width:rem(152px);
 	}
 }
 
 	.container-xs {
 		@media screen and (max-width: 1194px) and (min-width: 1024px) {
-			padding: 0px 22px 0px 105px !important;
+			padding: 0px rem(40px) 0px rem(105px) !important;
 
 		}
 
 		.flickit-content {
 			.app-buttons {
 				@media screen and (max-width: 1194px) and (min-width: 320px) {
-					margin-top: 32px !important;
+					margin-top: rem(32px) !important;
 					padding:0 !important;
 				}
 
@@ -686,12 +725,12 @@
 	}
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
-		padding: 60px 0px;
+		padding: rem(60px) 0px;
 
 	}
 
 	@media screen and (max-width: 767px) and (min-width: 320px) {
-		padding: 60px 0px;
+		padding: rem(60px) 0px;
 
 		.flickit-row {
 			flex-direction: column-reverse;
@@ -705,7 +744,7 @@
 		position: relative;
 		z-index: 99;
 		img{
-			max-width:490px;
+			max-width:rem(490px);
 		}
 
 		.flickit-img {
@@ -718,7 +757,7 @@
 		}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-			margin: 40px 0px 0px;
+			margin: rem(40px) 0px 0px;
 			justify-content: center;
 		}
 
@@ -732,54 +771,54 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 			margin: 0px auto;
-			height: 476px;
+			height: rem(476px);
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
-				height: 237px;
+				height: rem(237px);
 				background-position: center;
 			}
 
 			@media screen and (max-width: 1194px) and (min-width: 568px) {
-			    height: 352px;
+			    height: rem(352px);
 
 			}
 		}
 	}
 
 	.flickit-content {
-		max-width: 572px;
+		max-width: rem(572px);
 
 
 
 		@media screen and (max-width: 1194px) and (min-width: 991px) {
 			max-width: 100%;
-			margin-left: 59px;
+			margin-left: rem(59px);
 
 		}
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			.heading-sm {
 				font-size:  rem(42px) !important;
-				line-height: 64px !important;
+				line-height: rem(64px) !important;
 
 			}
 		}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			max-width: 100%;
-			padding: 0px 4px;
+			padding: 0px rem(4px);
 		}
 
 		.heading-sm {
 			font-size:  rem(40px);
-			margin-bottom: 24px;
-			line-height: 68px;
+			margin-bottom: rem(24px);
+			line-height: rem(68px);
 			color: $gray-900;
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
 				font-size: rem(24px);
-				line-height: 42px;
-				margin-bottom: 16px;
+				line-height: rem(42px);
+				margin-bottom: rem(16px);
 			}
 		}
 
