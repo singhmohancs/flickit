@@ -1,13 +1,19 @@
 // Theme colors
+@import "../components/mixin";
+$font-size-base: 16px !default; // Assumes the browser default, typically `16px`
+
+
+
 $blue: #0c60ff !default;
 $blue-200: #0057ff;
 $gray-dark:#4b4b4b;
-
+$gray-light: #ebf0ff !default;
 $white-50:#f1f1f1;
+$gray-20:#444a4b;
+$gray-10: #fafbff !default;
 
 $white: #fff !default;
-$gray-100: #444a4b !default;
-$gray-200: #fafbff !default;
+
 $gray-300: #ebf0ff !default;
 $gray-400: #dae2f6 !default;
 $gray-500: #8d8d8d !default;
@@ -31,7 +37,7 @@ $font-family:'Chivo', sans-serif ;
 
 
 
-$large-font:48px;
-$medium-font:32px;
-$normal-font:24px;
-$xsmall-font:16px;
+$large-font:rem(48px);
+$medium-font:rem(32px);
+$normal-font:rem(24px);
+$xsmall-font:rem(16px);

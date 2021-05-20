@@ -4,7 +4,8 @@ body {
 }
 
 .container {
-	max-width: 1460px !important;
+    max-width: 1544px !important;
+ 
 	@media screen and(max-width: 1194px) and(min-width:768px) {
 		max-width: 100% !important;
 		padding: 0px 40px !important;
@@ -16,7 +17,8 @@ body {
 }
 
 .container-xs {
-	max-width: 1216px !important;
+	max-width: 100% !important;
+
 	@media screen and(max-width: 1194px) and(min-width:992px) {
 		max-width: 100% !important;
 		padding: 0px 105px !important;
@@ -64,11 +66,11 @@ body {
 	line-height: 48px;
 	font-weight: bold;
 	@media screen and(max-width: 1194px) and(min-width:768px) {
-		font-size: 24px;
+		font-size:  rem(24px);
 		line-height: 48px;
 	}
 	@media screen and (max-width: 767px) and (min-width: 320px) {
-		font-size: 20px;
+		font-size:  rem(20px);
 		line-height: 30px;
 		margin-bottom: 24px;
 		text-align: center;
@@ -82,7 +84,7 @@ body {
 	height: 2px !important;
 	background-color: $gray-400;
 	opacity: 1;
-	max-width: 1190px;
+	max-width: 1226px;
 	margin: 0px auto;
 	@media screen and(max-width: 1194px) and(min-width:992px) {
 		max-width: 100% !important;
@@ -100,7 +102,7 @@ body {
 
 .full-width {
 	max-width: 100%;
-	background: $gray-200;
+	background: $gray-10;
 }
 
 .wrapper {
@@ -136,6 +138,7 @@ button{
 		display: flex;
 
 		img {
+		
 			@media screen and (max-width: 767px) and (min-width: 320px) {
 				max-width: 124px;
 				width: 100%; 
@@ -144,6 +147,9 @@ button{
 	}
 
 	.btn {
+		img{
+			max-width: 152px;
+		}
 		&:not(:last-child) {
 			margin-right: 24px;
 
