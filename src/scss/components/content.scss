@@ -752,6 +752,7 @@
 		z-index: 99;
 		img{
 			max-width:rem(490px);
+		
 			@media screen and(max-width: 567px) and(min-width:320px) {
 				max-width: rem(257px);
 			
@@ -786,7 +787,7 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 			margin: 0px auto;
-			height: rem(476px);
+			height: rem(480px);
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
 				height: rem(237px);
