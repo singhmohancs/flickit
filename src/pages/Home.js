@@ -55,8 +55,8 @@ const Home = () => {
          </section>
 
          <section class="flickit-services service-1  pb-200">
-            <div class="container  container-xs">
-               <div class="row flickit-row d-flex align-items-center">
+            <div class=" container-xs container">
+               <div class="row g-0 flickit-row d-flex align-items-center">
                <div class="col-md-6">
                      <div class="flickit-image">
                         <img alt="illustration-1" src={require('../static/img/illustration-1.png').default} />
@@ -80,7 +80,7 @@ const Home = () => {
          </section>
          <section class="flickit-services service-2   pb-200">
             <div class="container container-xs">
-               <div class="flickit-row row flex-row-reverse d-flex align-items-center">
+               <div class="flickit-row g-0 row flex-row-reverse d-flex align-items-center">
                   <div class="col-md-6 col-lg-5 col-xl-5">
                      <div class="flickit-image">
                         <img alt="illustration-2" src={require('../static/img/illustration-2.png').default} />
@@ -103,7 +103,7 @@ const Home = () => {
          </section>
          <section class="flickit-services service-3  pb-220">
             <div class="container  container-xs">
-               <div class="flickit-row row d-flex align-items-center">
+               <div class="flickit-row g-0 row d-flex align-items-center">
                   <div class="col-md-6">
                      <div class="flickit-image">
                         <img  alt="illustration-3" src={require('../static/img/illustration-3.png').default} />
@@ -125,7 +125,7 @@ const Home = () => {
          </section>
          <section class="flickit-services service-4  pb-135">
             <div class="container  container-xs">
-               <div class="flickit-row row flex-row-reverse d-flex align-items-center">
+               <div class="flickit-row g-0 row flex-row-reverse d-flex align-items-center">
                   <div class="col-md-6 col-lg-6 col-xl-6">
                      <div class="flickit-image">
                         <img alt="illustration-4"  src={require('../static/img/illustration-4.png').default} />
@@ -137,8 +137,7 @@ const Home = () => {
                            of insurance
                            anywhere
                         </div>
-                        <p>With our automated channels, you can make secure payments effortlessly, and view your proof
-                           of insurance anywhere, with or without connection
+                        <p>With our automated channels, you can make secure payments effortlessly and view your POI anywhere and at any time.
                         </p>
                      </div>
                   </div>
@@ -167,18 +166,20 @@ const Home = () => {
          </section>
          <section class="flickit-list-sec full-width">
             <div class="container-fluid  container-xs">
-               <div class="row">
-                  <div class="col-md-6">
+               <div class="row g-0 flickit-row">
+                  <div class="trans-list-col col-md-6  ps-0">
                      <div class="flickit-service-list  left-area">
                         <div class="heading-sm">With <span>Traditional Insurers</span>, you get</div>
                         <ul class="flickit-list list-unstyled">
                            <li>Lengthy applications</li>
                            <li>Long and Lengthy claims Processing</li>
                            <li>Opaque</li>
+                           <li>Ut enim sit amet consequat</li>
+
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="trans-list-col col-md-6 d-flex justify-content-end">
                      <div class="flickit-service-list   right-area">
                         <div class="heading-sm">With Flickit, you get</div>
                         <ul class="flickit-list list-unstyled">
@@ -195,7 +196,7 @@ const Home = () => {
          </section>
          <section class="flickit-happy-sec">
             <div class="container container-xs">
-               <div class="row flickit-row d-flex align-items-center justify-content-center">
+               <div class="row g-0 flickit-row d-flex align-items-center justify-content-center">
                   <div class="col-md-12">
                      <div class="flickit-image">
                         <img alt="illustration-5" src={require('../static/img/illustration-5.png').default} />
@@ -218,7 +219,7 @@ const Home = () => {
          </section>
          <section class="flickit-newsletter-sec full-width">
             <div class="container-fluid container-xs">
-               <div class="row flickit-row">
+               <div class="row  flickit-row">
                   <div class="col-md-12">
                      <div class="heading-sm">Insurance Designed for <span>Today’s Ecosystems</span>.
                         We’re
@@ -239,7 +240,7 @@ const Home = () => {
          </section>
          <section class="flickit-download-app-sec ">
             <div class="container container-xs">
-               <div class="row flickit-row d-flex align-items-center justify-content-center">
+               <div class="row g-0 flickit-row d-flex align-items-center justify-content-center">
                <div class="col-md-6 col-lg-5 col-xl-6">
                      <div class="flickit-app-img">
                         <img alt="phone" class="flickit-img" src={require('../static/img/phone-mockup.png').default } />

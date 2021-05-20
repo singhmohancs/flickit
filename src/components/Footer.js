@@ -9,7 +9,7 @@ const Footer = () => {
 
                   <div class="footer-widget">
                      <div class="footer-logo">
-                        <a class=" m-0" href="#"><img alt ="logo"src={require('../static/img/Logo.png').default} /></a>
+                        <a class=" m-0" href="#"><img alt ="logo"src={require('../static/img/Flickit.png').default} /></a>
                      </div>
                      <div class="footer-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
@@ -46,7 +46,7 @@ const Footer = () => {
                   </div>
 
 
-                  <div class="footer-widget">
+                  <div class="footer-widget ms-3">
                      <div class="app-buttons d-flex mt-0">
                         <button type="button" class="btn p-0"><img alt="google-play-store" src= {require('../static/img/playstore.png').default} /></button>
                         <button type="button" class="btn p-0"><img alt="app-store" src={require('../static/img/app-store.png').default} /></button>

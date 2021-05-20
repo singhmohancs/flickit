@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
-import companyLogo from '../static/img/Logo.png';
+import companyLogo from '../static/img/Flickit.png';
 import iconMenu from '../static/img/icon-menu.png';
 
 const Menu = () => {
@@ -32,7 +32,7 @@ const Menu = () => {
              </li>
           </ul>
 
-          <ul class="mb-0 pl-0 d-flex nav-right">
+          <ul class="mb-0 ps-0 d-flex nav-right">
              <button type="button" class="p-0 btn btn-link">Sign in</button>
              <button type="button" class="btn-header btn btn-primary">Get a quote</button>
           </ul>

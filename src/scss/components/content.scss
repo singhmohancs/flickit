@@ -3,7 +3,7 @@
 		width: 100%;
 
 		.flickit-heading {
-			max-width: 890px;
+			max-width: 854px;
 
 			margin: 0px auto 32px;
 			text-align: center;
@@ -31,13 +31,13 @@
 		}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-			font-size: 24px;
+			font-size: rem(24px);
 			line-height: 42px;
 			margin-bottom: 16px !important;
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
-			font-size: 42px;
+			font-size: rem(42px);
 			line-height: 64px;
 			margin-bottom: 24px;
 		}
@@ -60,7 +60,7 @@
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
-			font-size: 20px !important;
+			font-size: rem(20px) !important;
 			line-height: 34px;
 		}
 	}
@@ -80,23 +80,23 @@
 		line-height: 36px;
 		font-weight: bold;
 		position: relative;
-		padding-left: 40px;
+		padding-left: 55px;
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-			font-size: 18px;
+			font-size:  rem(18px);
 			line-height: 30px;
 
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
-			font-size: 22px;
+			font-size:  rem(22px);
 			line-height: 33px;
 
 		}
 
 		&:not(:last-child) {
 			margin-bottom: 32px;
-			padding-left: 40px;
+		
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
 				margin-bottom: 24px;
@@ -144,6 +144,18 @@
 .flickit-services {
 	&.service-1 {
 		margin-top: 20px;
+	
+		.flickit-row {
+			max-width:1226px;
+			width:100%;
+			margin: 0px auto;
+			.flickit-image {
+				img {
+					width: 370px;
+				}
+
+			}
+		}
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 
@@ -171,6 +183,20 @@
 	}
 
 	&.service-2 {
+		.flickit-row {
+			max-width:1195px;
+			width:100%;
+			margin: 0px auto;
+			
+			.flickit-image {
+				img {
+					max-width: 313px;
+
+				}
+
+			}
+
+		}
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			.flickit-row {
 				.flickit-content {
@@ -190,6 +216,19 @@
 	}
 
 	&.service-3 {
+		.flickit-row {
+			max-width:1196px;
+			width:100%;
+			margin: 0px auto;
+			.flickit-image {
+				img {
+					max-width: 444px;
+
+				}
+
+			}
+
+		}
 		.flickit-content {
 			max-width: 576px;
 			margin: 0px auto;
@@ -223,16 +262,27 @@
 	}
 
 	&.service-4 {
-		.flickit-content {
-			p {
-				max-width: 555px;
-
-				@media screen and (max-width: 767px) and (min-width: 320px) {
-					max-width: 100%;
-					margin: 0px auto;
+		.flickit-row {
+			max-width:1235px;
+			width:100%;
+			margin: 0px auto;
+			.flickit-image {
+				img {
+					max-width: 420px;
 
 				}
+
 			}
+
+		}
+		.flickit-content {
+			max-width: 555px;
+			@media screen and (max-width: 767px) and (min-width: 320px) {
+				max-width: 100%;
+				margin: 0px auto;
+
+			}
+		
 
 		}
 
@@ -258,12 +308,7 @@
 
 	&.service-1 {
 		.flickit-content {
-			padding-left: 20px;
-
-			@media screen and (max-width: 767px) and (min-width: 320px) {
-				padding: 0px;
-			}
-
+		
 			p {
 				max-width: 500px;
 
@@ -275,15 +320,6 @@
 		}
 	}
 
-	&.service-3 {
-		.flickit-content {
-			padding-left: 15px;
-
-			@media screen and (max-width: 767px) and (min-width: 320px) {
-				padding: 0px;
-			}
-		}
-	}
 
 	.flickit-row {
 		&.flex-row-reverse {
@@ -332,6 +368,12 @@
 
 .flickit-list-sec {
 	padding: 82px 0px;
+	.flickit-row{
+		max-width:1196px;
+		width:100%;
+		margin: 0px auto;
+
+	}
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
 		padding: 60px 0px;
@@ -348,10 +390,11 @@
 	min-height: 426px;
 	height: 100%;
 	background: $white;
-	padding: 40px 109px 0px 60px;
+	padding: 40px 107px 0px 60px;
 	box-sizing: border-box;
 	box-shadow: -8px 16px 42px rgba(23, 23, 49, 0.08);
 	border-radius: 8px;
+	width: 583px;
 
 	.heading-sm {
 		@media screen and(max-width: 767px)and(min-width:320px) {
@@ -384,11 +427,18 @@
 	}
 
 	li {
-		font-size: 20px;
+		font-size:  rem(20px);
 		line-height: 30px;
 		margin-bottom: 24px !important;
 		font-weight: 400;
-		color:$gray-100;
+		color:$gray-20;
+		    padding-left: 50px;
+			&:before {
+				width: 24px;
+           height: 22px;
+			
+
+			}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			font-size: $xsmall-font;
@@ -443,7 +493,7 @@
 			color: $white;
 
 			@media screen and (max-width: 1194px) and (min-width: 768px) {
-				font-size: 32px;
+				font-size:  rem(32px);
 				line-height: 48px;
 			}
 		}
@@ -462,6 +512,14 @@
 /**happy-sec**/
 .flickit-happy-sec {
 	padding: 120px 0px;
+	.flickit-row{
+		max-width: 1124px;
+		margin: 0px auto;
+		width:100%;
+	}
+	img{
+		max-width:555px;
+	}
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
 		padding: 100px 0px;
@@ -504,7 +562,7 @@
 
 	.flickit-content {
 		text-align: center;
-		padding: 0px 30px;
+	
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			padding: 0px 40px;
@@ -513,7 +571,7 @@
 		p {
 			@media screen and (max-width: 1194px) and (min-width: 768px) {
 
-				font-size: 24px !important;
+				font-size:  rem(24px)!important;
 				line-height: 40px !important;
 
 
@@ -570,7 +628,7 @@
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
 			max-width: 100%;
-			font-size: 24px !important;
+			font-size:  rem(24px) !important;
 			line-height: 42px !important;
 			padding: 0px 8px !important;
 		}
@@ -580,7 +638,7 @@
 		}
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
-			font-size: 32px;
+			font-size:  rem(32px);
 			line-height: 62px !important;
 		}
 	}
@@ -590,6 +648,16 @@
 
 .flickit-download-app-sec {
 	padding: 100px 0px;
+	.flickit-row {
+		max-width:1183px;
+		margin:0px auto;
+
+	}
+	.flickit-content {
+	img{
+		max-width:152px;
+	}
+}
 
 	.container-xs {
 		@media screen and (max-width: 1194px) and (min-width: 1024px) {
@@ -680,7 +748,7 @@
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
 			.heading-sm {
-				font-size: 42px !important;
+				font-size:  rem(42px) !important;
 				line-height: 64px !important;
 
 			}
@@ -692,13 +760,13 @@
 		}
 
 		.heading-sm {
-			font-size: 40px;
+			font-size:  rem(40px);
 			margin-bottom: 24px;
 			line-height: 68px;
 			color: $gray-900;
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
-				font-size: 24px;
+				font-size: rem(24px);
 				line-height: 42px;
 				margin-bottom: 16px;
 			}
