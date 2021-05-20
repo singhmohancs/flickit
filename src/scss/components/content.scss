@@ -377,6 +377,9 @@
 
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
 		padding: 60px 0px;
+		.container-xs{
+			padding:0px 102px !important;
+		}
 
 	}
 
@@ -413,6 +416,7 @@
 	@media screen and(max-width:1194px) and(min-width:768px) {
 		padding: 32px 45px 0px 40px;
 		min-height: 368px;
+		width:480px;
 	}
 
 	.flickit-list {
@@ -512,6 +516,13 @@
 /**happy-sec**/
 .flickit-happy-sec {
 	padding: 120px 0px;
+	@media screen and (max-width: 1194px) and (min-width: 768px) {
+		.container-xs{
+			padding:0px 169px !important;
+	
+		}
+	}
+	
 	.flickit-row{
 		max-width: 1124px;
 		margin: 0px auto;
@@ -563,10 +574,6 @@
 	.flickit-content {
 		text-align: center;
 	
-
-		@media screen and (max-width: 1194px) and (min-width: 768px) {
-			padding: 0px 40px;
-		}
 
 		p {
 			@media screen and (max-width: 1194px) and (min-width: 768px) {
@@ -697,6 +704,9 @@
 		justify-content: flex-start;
 		position: relative;
 		z-index: 99;
+		img{
+			max-width:490px;
+		}
 
 		.flickit-img {
 			@media screen and (max-width: 1194px) and (min-width: 320px) {
@@ -730,7 +740,7 @@
 			}
 
 			@media screen and (max-width: 1194px) and (min-width: 568px) {
-				display: none;
+			    height: 352px;
 
 			}
 		}

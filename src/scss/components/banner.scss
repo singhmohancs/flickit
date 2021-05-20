@@ -21,6 +21,13 @@
 	.banner-row {
 		padding-left: 44px;
 		padding-right: 36px;
+		@media screen and (max-width: 1194px) and (min-width: 320px) {
+			padding-left: 0;
+			padding-right: 0;
+			
+			
+
+		}
 		@media screen and(max-width:1194px) and(min-width:768px) {
 			align-items: flex-start !important;
 
@@ -122,6 +129,11 @@
 		padding-top: rem(75px);
 		height: rem(595px);
 		margin-left: rem(70px);
+		img{
+			
+			max-width: 453px;
+
+		}
 
 		@media screen and(max-width: 1194px) and(min-width:568px) {
 			height: 455px;

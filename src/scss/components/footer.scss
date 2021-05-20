@@ -165,6 +165,10 @@
             width: 100%;
             max-width: 215px;
             margin-right: 120px;
+            @media screen and (max-width: 1194px) and (min-width: 768px) {
+                margin-right: 71px;
+
+            }
             @media screen and (max-width: 991px) and (min-width: 768px) {
                 max-width: 100%;
 
@@ -180,11 +184,19 @@
         &:nth-child(2) {
           
             margin-right: 117px;
+            @media screen and (max-width: 1194px) and (min-width: 768px) {
+                margin-right: 98px;
+
+            }
           
     }
     &:nth-child(3) {
           
         margin-right: 108px;
+        @media screen and (max-width: 1194px) and (min-width: 768px) {
+            margin-right: 84px;
+
+        }
       
 }
 }

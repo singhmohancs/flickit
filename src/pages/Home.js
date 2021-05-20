@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import Meta from '../components/Meta'
 import ComingSoon from '../components/ComingSoon'
-import phoneMockup from '../static/img/phone-mockup.png';
+import phoneMockup from '../static/img/frame.png';
 import phoneTablet from '../static/img/phone-mockup-tablet.png';
 import phoneMobScreen from '../static/img/phone-mob-screen.png';
 
@@ -31,7 +31,8 @@ const Home = () => {
                   </div>
                   <div class="col-md-6 banner-col-right">
                      <div class="banner-right-image">
-                        <img alt="phone" class="phone-img" src={phoneMockup} />
+                        {/* <img alt="phone" class="phone-img" src={frame} /> */}
+                         <img  alt="icon" class="phone-img" src={require('../static/img/frame.png').default} />
                         <img alt="phone-img-tablet" class="phone-img-tablet" src={phoneTablet} />
                         <img alt="phone-img-mob" class="phone-img-mob" src={phoneMobScreen} />
 
@@ -242,8 +243,8 @@ const Home = () => {
                <div class="row g-0 flickit-row d-flex align-items-center justify-content-center">
                <div class="col-md-6 col-lg-5 col-xl-6">
                      <div class="flickit-app-img">
-                        <img alt="phone" class="flickit-img" src={require('../static/img/phone-mockup.png').default } />
-                        <img alt="phone-tablet"  class="phone-img-tablet" src={require('../static/img/phone.png').default } />
+                        <img alt="phone" class="flickit-img" src={require('../static/img/frame.png').default } />
+                        <img alt="phone-tablet"  class="phone-img-tablet" src={require('../static/img/phone-mockup-tablet.png').default } />
                         <img alt="phone-mob"  class="phone-img-mob" src={require('../static/img/phone-mob-screen.png').default } />
 
                      </div>

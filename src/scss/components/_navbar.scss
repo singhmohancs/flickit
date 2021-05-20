@@ -18,6 +18,12 @@
 	.navbar-brand {
 		padding:0;
 		padding-left: 34px;
+		@media screen and (max-width: 1194px) and (min-width: 320px) {
+			padding-left: 0;
+			
+			
+
+		}
 		img {
 			max-width: 166px;
 			width: 100%;
@@ -81,9 +87,9 @@
 
 	.nav-right {
 	    padding-right: 40px;
-		@media screen and (max-width: 991px) and (min-width: 320px) {
+		@media screen and (max-width: 1194px) and (min-width: 320px) {
 			padding-left: 0;
-
+			padding-right: 0;
 			padding-bottom: 0px;
 
 		}
