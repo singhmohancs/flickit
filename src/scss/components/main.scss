@@ -141,7 +141,8 @@ button{
 		img {
 		
 			@media screen and (max-width: 767px) and (min-width: 320px) {
-				max-width: rem(124px);
+				max-width: rem(124px) !important;
+				height:rem(40px);
 				width: 100%; 
 			}
 		}

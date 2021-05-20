@@ -17,7 +17,7 @@
             font-size: rem(16px) !important;
             border-right: 0px;
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                padding:0px 16px;
+                padding:0px rem(16px);
                 font-size:  rem(14px) !important;
             }
         
@@ -30,11 +30,12 @@
         }
         .btn{
             height: rem(54px);
-            padding: 15px 32px;
+            padding: rem(15px) rem(32px);
             font-weight: bold;
             border-radius: rem(6px);
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                padding: 15px 24px;
+                
+                padding: rem(15px) rem(24px);
             }
 
         }
