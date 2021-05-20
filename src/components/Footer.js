@@ -47,7 +47,7 @@ const Footer = () => {
                   </div>
 
 
-                  <div class="footer-widget ms-3">
+                  <div class="footer-widget">
                      <div class="app-buttons d-flex mt-0">
                         <button type="button" class="btn p-0"><img alt="google-play-store" src= {require('../static/img/playstore.png').default} /></button>
                         <button type="button" class="btn p-0"><img alt="app-store" src={require('../static/img/app-store.png').default} /></button>
