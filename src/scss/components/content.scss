@@ -667,8 +667,9 @@
 
 		.flickit-content {
 			.app-buttons {
-				@media screen and (max-width: 1194px) and (min-width: 991px) {
+				@media screen and (max-width: 1194px) and (min-width: 320px) {
 					margin-top: 32px !important;
+					padding:0 !important;
 				}
 
 			}

@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import Meta from '../components/Meta'
-
+import ComingSoon from '../components/ComingSoon'
 import phoneMockup from '../static/img/phone-mockup.png';
 import phoneTablet from '../static/img/phone-mockup-tablet.png';
 import phoneMobScreen from '../static/img/phone-mob-screen.png';
@@ -26,8 +26,7 @@ const Home = () => {
                            Painless
                         </h1>
                         <p class="mb-0">Modern Insurance with Smart technology</p>
-                        <button type="button" class="mt-60 btn-header btn btn-primary">Get a
-                           quote</button>
+                        <ComingSoon styleClass="mt-60 btn-header btn btn-primary" />   
                      </div>
                   </div>
                   <div class="col-md-6 banner-col-right">
@@ -36,7 +35,7 @@ const Home = () => {
                         <img alt="phone-img-tablet" class="phone-img-tablet" src={phoneTablet} />
                         <img alt="phone-img-mob" class="phone-img-mob" src={phoneMobScreen} />
 
-                        <div  class="banner-service-card top-left">
+                        {/* {<div  class="banner-service-card top-left">
                            <img  alt="icon" src={require('../static/img/icon-smartphone.png').default} />
                            <h5>Smart Insurance</h5>
                         </div>
@@ -47,7 +46,7 @@ const Home = () => {
                         <div class="banner-service-card center-right">
                            <img alt="cash-icon" src={require('../static/img/icon-cash.png').default} />
                            <h5>Instant Quote</h5>
-                        </div>
+                        </div>} */}
                      </div>
                   </div>
                </div>
