@@ -41,6 +41,9 @@
             border-radius: px-rem(6px);
           
             z-index: 9999;
+            @media screen and (max-width: 567px) and (min-width: 320px) {
+               position: inherit;
+            }
 
         }
        
