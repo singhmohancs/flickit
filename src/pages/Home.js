@@ -35,7 +35,7 @@ const Home = () => {
                         <img alt="phone-img-tablet" class="phone-img-tablet" src={phoneTablet} />
                         <img alt="phone-img-mob" class="phone-img-mob" src={phoneMobScreen} />
 
-                         <div  class="banner-service-card top-left">
+                         {/* <div  class="banner-service-card top-left">
                            <img  alt="icon" src={require('../static/img/icon-smartphone.png').default} />
                            <h5>Smart Insurance</h5>
                         </div>
@@ -46,7 +46,7 @@ const Home = () => {
                         <div class="banner-service-card center-right">
                            <img alt="cash-icon" src={require('../static/img/icon-cash.png').default} />
                            <h5>Instant Quote</h5>
-                        </div>
+                        </div> */}
                      </div>
                   </div>
                </div>
@@ -173,8 +173,6 @@ const Home = () => {
                            <li>Lengthy applications</li>
                            <li>Long and Lengthy claims Processing</li>
                            <li>Opaque</li>
-                           <li>Ut enim sit amet consequat</li>
-
                         </ul>
                      </div>
                   </div>
