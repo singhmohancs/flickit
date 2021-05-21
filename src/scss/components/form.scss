@@ -16,7 +16,9 @@
             padding:0px px-rem(24px);
             font-size: rem(16px) !important;
             border-right: none;
-            
+            max-width: rem(306px);
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
             @media screen and (max-width: 767px) and (min-width: 320px) {
                 padding:0px px-rem(16px);
                 font-size:  rem(14px) !important;
@@ -24,24 +26,25 @@
         
             &:focus{
                 outline:none;
-                border:1px solid $primary;
+         border:1px solid $primary;
                 box-shadow: none;
-            }
-
+                border-right: none;
+            
+        }
         }
         .btn{
             width:px-rem(118px);
             height: px-rem(54px);
-          
+            position: absolute;
+            right: -2px;
             font-weight: bold;
             border-radius: px-rem(6px);
           
+            z-index: 9999;
 
         }
-
-        .input-group-append{
-            margin-left: -5px !important;
-        }
+       
+      
 
     }
 
