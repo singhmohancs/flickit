@@ -136,7 +136,7 @@ const Home = () => {
                      <div class="flickit-content">
                         <div class="flickit-heading"><span>Pay bills easily.</span> View proof
                            of insurance
-                           anywhere.
+                           anywhere
                         </div>
                         <p>With our automated channels, you can make secure payments effortlessly and view your POI anywhere and at any time.
                         </p>
