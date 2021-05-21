@@ -20,6 +20,9 @@
 
             img {
                 max-width: 135px;
+           
+                image-rendering: -webkit-optimize-contrast;
+                -ms-interpolation-mode: nearest-neighbor;
 
                 @media screen and (max-width: 767px) and (min-width: 320px) {
                     max-width: 165px;
