@@ -1,23 +1,24 @@
 .custom-input-group{
     &.input-group{
-        max-width:rem(420px);
+        max-width:px-rem(420px);
         width:100%;
         margin: 32px auto 0px !important;
         height:54px;
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: rem(40px) !important;
+            margin-top: px-rem(40px) !important;
         }
       
         .form-control{
             background: $white;
-            border: 1px solid rgba(141, 141, 141, 0.4);
+            border: 1px solid rgba(141, 141, 141, 0.6);
             box-sizing: border-box;
-            border-radius: rem(6px);
-            padding:0px rem(24px);
+            border-radius: px-rem(6px);
+            padding:0px px-rem(24px);
             font-size: rem(16px) !important;
-            border-right: 0px;
+            border-right: none;
+            
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                padding:0px rem(16px);
+                padding:0px px-rem(16px);
                 font-size:  rem(14px) !important;
             }
         
@@ -29,15 +30,17 @@
 
         }
         .btn{
-            height: rem(54px);
-            padding: rem(15px) rem(32px);
+            width:px-rem(118px);
+            height: px-rem(54px);
+          
             font-weight: bold;
-            border-radius: rem(6px);
-            @media screen and (max-width: 767px) and (min-width: 320px) {
-                
-                padding: rem(15px) rem(24px);
-            }
+            border-radius: px-rem(6px);
+          
 
+        }
+
+        .input-group-append{
+            margin-left: -5px !important;
         }
 
     }
