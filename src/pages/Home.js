@@ -65,7 +65,7 @@ const Home = () => {
                   </div>
                   <div class="col-md-6">
                      <div class="flickit-content">
-                        <div class="flickit-heading"><span>Paperless </span>Experience .</div>
+                        <div class="flickit-heading"><span>Paperless </span>Experience.</div>
                         <p>Seriously fast, Hassle free and flexible insurance with just a few
                            clicks.
                         </p>
@@ -220,9 +220,8 @@ const Home = () => {
             <div class="container-fluid container-xs">
                <div class="row  flickit-row">
                   <div class="col-md-12">
-                     <div class="heading-sm">Insurance Designed for <span>Today’s Ecosystems.</span>
-                        We’re
-                        Building Insurance fit for the future.
+                     <div class="heading-sm">Insurance Designed for <span>Today’s Ecosystems. </span>
+                        We’re Building Insurance fit for the future.
                      </div>
                      <form class="">
                         <div class="custom-input-group input-group mb-3">
