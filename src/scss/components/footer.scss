@@ -17,16 +17,8 @@
     .footer-widget {
         .footer-logo {
             margin-bottom: 24px;
-            max-width: 135px;
-            width:100%;
-            @media screen and (max-width: 767px) and (min-width: 320px) {
-                max-width: 165px;
-                margin:0px auto;
-
-            }
-            img{
-                width:100%;
-            }
+         
+           
         }
 
     }

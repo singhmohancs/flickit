@@ -48,7 +48,7 @@
 	}
 
 	p {
-		font-size: $xsmall-font !important;
+		font-size: rem(17px) !important;
 		line-height:  px-rem(40px);
 		color: $paragraph-color;
 		margin-bottom: 0;
@@ -76,7 +76,7 @@
 
 	li {
 		color: $gray-90;
-		font-size: $xsmall-font;
+		font-size: $normal-font;
 		line-height: px-rem(30px);
 		font-weight: bold;
 		position: relative;
@@ -463,7 +463,7 @@
 	}
 
 	li {
-		font-size:   rem(16px);
+		font-size:   rem(17px);
 		line-height:  px-rem(30px);
 		margin-bottom:  px-rem(24px) !important;
 		font-weight: 400;

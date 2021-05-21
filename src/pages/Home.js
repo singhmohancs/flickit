@@ -138,7 +138,7 @@ const Home = () => {
                            of insurance
                            anywhere
                         </div>
-                        <p>With our automated channels, you can make secure payments effortlessly and view your POI anywhere and at any time.
+                        <p>With our automated channels, you can make secure payments effortlessly and view your proof of insurance anywhere, with or without connection
                         </p>
                      </div>
                   </div>
@@ -220,7 +220,7 @@ const Home = () => {
             <div class="container-fluid container-xs">
                <div class="row  flickit-row">
                   <div class="col-md-12">
-                     <div class="heading-sm">Insurance Designed for <span>Today’s Ecosystems. </span>
+                     <div class="heading-sm">Insurance Designed for <span>Today’s Ecosystems </span>
                         We’re Building Insurance fit for the future
                      </div>
                      <form class="">
@@ -242,6 +242,7 @@ const Home = () => {
                <div class="col-md-6 col-lg-5 col-xl-6">
                      <div class="flickit-app-img">
                         <img alt="phone" class="flickit-img" src={require('../static/img/phone-mockup.png').default } />
+                  
                         <img alt="phone-tablet"  class="phone-img-tablet" src={require('../static/img/phone-mockup-tablet.png').default } />
                         <img alt="phone-mob"  class="phone-img-mob" src={require('../static/img/phone-mob-screen.png').default } />
 
