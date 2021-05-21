@@ -17,40 +17,32 @@
     .footer-widget {
         .footer-logo {
             margin-bottom: 24px;
-
-            img {
-                max-width: 135px;
-
-                @media screen and (max-width: 767px) and (min-width: 320px) {
-                    max-width: 165px;
-
-                }
-
-            }
+         
+           
         }
 
     }
 
     .footer-heading {
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: 40px;
+            margin-top: px-rem(40px);
 
         }
 
         h3 {
             font-size: $normal-font;
-            line-height: 24px;
-            color: $gray-900;
+            line-height: px-rem(24px);
+            color: $gray-90;
             font-weight: bold;
-            margin-bottom: 32px;
+            margin-bottom: px-rem(32px);
 
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                margin-bottom: 24px;
+                margin-bottom: px-rem(24px);
 
             }
 
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                font-size: 20px;
+                font-size: rem(20px);
 
             }
 
@@ -65,10 +57,10 @@
         li {
 
             &:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: px-rem(20px);
 
                 @media screen and (max-width: 767px) and (min-width: 320px) {
-                    margin-bottom: 25px;
+                    margin-bottom: px-rem(25px);
 
                 }
             }
@@ -76,8 +68,8 @@
 
         a {
             font-size: $xsmall-font;
-            line-height: 24px;
-            color: $gray-500;
+            line-height: px-rem(24px);
+            color: $gray-30;
             text-decoration: none;
 
             &:hover {
@@ -88,15 +80,16 @@
     }
 
     .footer-text {
-        margin-top: 24px;
+        margin-top: px-rem(24px);
         &.copyright-content{
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                margin-top: 40px;
+                margin-top: px-rem(40px);
     
             }
             p{
+              
                 @media screen and (max-width: 767px) and (min-width: 320px) {
-                    font-size: 14px;
+                    font-size: rem(14px);
         
                 }
               
@@ -104,14 +97,16 @@
         }
 
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: 32px;
-            padding: 0px 16px;
+            margin-top: px-rem(32px);
+            padding: 0px px-rem(16px);
 
 
         }
 
         p {
-            color: $gray-800;
+            color: $paragraph-color;
+            line-height: px-rem(27px);
+            font-size: rem(16px);
 
         }
     }
@@ -119,6 +114,11 @@
 
 .footer-cols {
     display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1194px) and (min-width: 768px) {
+    justify-content: inherit;
+
+    }
 
     @media screen and (max-width: 991px) and (min-width: 768px) {
         flex-wrap: wrap;
@@ -141,7 +141,7 @@
 
     .footer-widget {
         &:not(:last-child) {
-            margin-right: 112px;
+         
 
             @media screen and(max-width:767px) and(min-width:320px) {
                 margin-right: 0px !important;
@@ -150,19 +150,23 @@
 
             @media screen and (max-width: 1194px) and (min-width: 992px) {
 
-                margin-right: 88px;
+                margin-right: px-rem(88px);
             }
 
             @media screen and (max-width: 991px) and (min-width: 768px) {
 
-                margin-right: 26px;
+                margin-right: px-rem(26px);
             }
         }
 
         &:first-child {
             width: 100%;
-            max-width: 215px;
+            max-width: px-rem(215px);
+            margin-right: px-rem(120px);
+            @media screen and (max-width: 1194px) and (min-width: 768px) {
+                margin-right: px-rem(71px);
 
+            }
             @media screen and (max-width: 991px) and (min-width: 768px) {
                 max-width: 100%;
 
@@ -175,21 +179,39 @@
 
             }
         }
+        &:nth-child(2) {
+          
+            margin-right: px-rem(117px);
+            @media screen and (max-width: 1194px) and (min-width: 768px) {
+                margin-right: 98px;
+
+            }
+          
     }
+    &:nth-child(3) {
+          
+        margin-right: px-rem(108px);
+        @media screen and (max-width: 1194px) and (min-width: 768px) {
+            margin-right: px-rem(84px);
+
+        }
+      
+}
+}
 
     .footer-email-info {
-        margin-top: 32px;
+        margin-top: px-rem(32px);
 
         @media screen and (max-width: 991px) and (min-width: 768px) {
 
-            margin-bottom: 32px;
+            margin-bottom: px-rem(32px);
 
         }
 
         p {
           
-                padding-top: 10px;
-
+                padding-top: px-rem(10px);
+                font-size: rem(16px);
             
         }
 

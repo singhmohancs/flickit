@@ -1,6 +1,6 @@
 
 // Variables
-@import "variables/app";
+
 
 // Bootstrap
 @import "~bootstrap/scss/functions";
@@ -30,10 +30,11 @@
 @import "~bootstrap/scss/helpers";
 @import "~bootstrap/scss/utilities/api";
 
+@import "variables/app";
 
 
 // Theme components
-
+@import "components/mixin";
 @import "components/navbar";
 @import "components/main";
 @import "components/banner";
@@ -41,5 +42,6 @@
 @import "components/footer";
 @import "components/form";
 @import "components/about";
+
 
 

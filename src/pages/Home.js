@@ -31,11 +31,12 @@ const Home = () => {
                   </div>
                   <div class="col-md-6 banner-col-right">
                      <div class="banner-right-image">
-                        <img alt="phone" class="phone-img" src={phoneMockup} />
+                        {/* <img alt="phone" class="phone-img" src={frame} /> */}
+                         <img  alt="icon" class="phone-img" src={require('../static/img/phone-mockup.png').default} />
                         <img alt="phone-img-tablet" class="phone-img-tablet" src={phoneTablet} />
                         <img alt="phone-img-mob" class="phone-img-mob" src={phoneMobScreen} />
 
-                        <div  class="banner-service-card top-left">
+                     {/* <div  class="banner-service-card top-left">
                            <img  alt="icon" src={require('../static/img/icon-smartphone.png').default} />
                            <h5>Smart Insurance</h5>
                         </div>
@@ -46,7 +47,8 @@ const Home = () => {
                         <div class="banner-service-card center-right">
                            <img alt="cash-icon" src={require('../static/img/icon-cash.png').default} />
                            <h5>Instant Quote</h5>
-                        </div>
+                        </div>  */}
+                       
                      </div>
                   </div>
                </div>
@@ -54,8 +56,8 @@ const Home = () => {
          </section>
 
          <section class="flickit-services service-1  pb-200">
-            <div class="container  container-xs">
-               <div class="row flickit-row d-flex align-items-center">
+            <div class=" container-xs container">
+               <div class="row g-0 flickit-row d-flex align-items-center">
                <div class="col-md-6">
                      <div class="flickit-image">
                         <img alt="illustration-1" src={require('../static/img/illustration-1.png').default} />
@@ -65,12 +67,12 @@ const Home = () => {
                      <div class="flickit-content">
                         <div class="flickit-heading"><span>Paperless </span>Experience</div>
                         <p>Seriously fast, Hassle free and flexible insurance with just a few
-                           clicks
+                           clicks.
                         </p>
                         <ul class="flickit-list list-unstyled">
                            <li>100% Paperless experience</li>
                            <li>Quote in Few Seconds</li>
-                           <li>No more lengthy applications and paperwork</li>
+                           <li>No more lengthy applications and paperwork </li>
                         </ul>
                      </div>
                   </div>
@@ -79,7 +81,7 @@ const Home = () => {
          </section>
          <section class="flickit-services service-2   pb-200">
             <div class="container container-xs">
-               <div class="flickit-row row flex-row-reverse d-flex align-items-center">
+               <div class="flickit-row g-0 row flex-row-reverse d-flex align-items-center">
                   <div class="col-md-6 col-lg-5 col-xl-5">
                      <div class="flickit-image">
                         <img alt="illustration-2" src={require('../static/img/illustration-2.png').default} />
@@ -93,7 +95,7 @@ const Home = () => {
                         </div>
                         <p>Purchasing an insurance policy was never this easy. Get your policy
                            in your inbox
-                           within a few minutes and manage your policies seamlessly
+                           within a few minutes and manage your policies seamlessly.
                         </p>
                      </div>
                   </div>
@@ -102,7 +104,7 @@ const Home = () => {
          </section>
          <section class="flickit-services service-3  pb-220">
             <div class="container  container-xs">
-               <div class="flickit-row row d-flex align-items-center">
+               <div class="flickit-row g-0 row d-flex align-items-center">
                   <div class="col-md-6">
                      <div class="flickit-image">
                         <img  alt="illustration-3" src={require('../static/img/illustration-3.png').default} />
@@ -124,7 +126,7 @@ const Home = () => {
          </section>
          <section class="flickit-services service-4  pb-135">
             <div class="container  container-xs">
-               <div class="flickit-row row flex-row-reverse d-flex align-items-center">
+               <div class="flickit-row g-0 row flex-row-reverse d-flex align-items-center">
                   <div class="col-md-6 col-lg-6 col-xl-6">
                      <div class="flickit-image">
                         <img alt="illustration-4"  src={require('../static/img/illustration-4.png').default} />
@@ -136,14 +138,13 @@ const Home = () => {
                            of insurance
                            anywhere
                         </div>
-                        <p>With our automated channels, you can make secure payments effortlessly, and view your proof
-                           of insurance anywhere, with or without connection
+                        <p>With our automated channels, you can make secure payments effortlessly and view your proof of insurance anywhere, with or without connection
                         </p>
                      </div>
                   </div>
                </div>
             </div>
-         </section>
+         </section> 
          <hr class="seperater">
          </hr>
          <section class="flickit-total-trans-sec">
@@ -157,7 +158,7 @@ const Home = () => {
                            paying for
                         </div>
                         <p>We are building trust through complete transparency across board. Insurance that is
-                           customer-centric. Honest, fair, timely and transparent policies
+                           customer-centric. Honest, fair, timely and transparent policies.
                         </p>
                      </div>
                   </div>
@@ -166,8 +167,8 @@ const Home = () => {
          </section>
          <section class="flickit-list-sec full-width">
             <div class="container-fluid  container-xs">
-               <div class="row">
-                  <div class="col-md-6">
+               <div class="row g-0 flickit-row">
+                  <div class="trans-list-col-left col-md-6">
                      <div class="flickit-service-list  left-area">
                         <div class="heading-sm">With <span>Traditional Insurers</span>, you get</div>
                         <ul class="flickit-list list-unstyled">
@@ -177,7 +178,7 @@ const Home = () => {
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="trans-list-col-right col-md-6 d-flex ">
                      <div class="flickit-service-list   right-area">
                         <div class="heading-sm">With Flickit, you get</div>
                         <ul class="flickit-list list-unstyled">
@@ -194,7 +195,7 @@ const Home = () => {
          </section>
          <section class="flickit-happy-sec">
             <div class="container container-xs">
-               <div class="row flickit-row d-flex align-items-center justify-content-center">
+               <div class="row g-0 flickit-row d-flex align-items-center justify-content-center">
                   <div class="col-md-12">
                      <div class="flickit-image">
                         <img alt="illustration-5" src={require('../static/img/illustration-5.png').default} />
@@ -217,11 +218,10 @@ const Home = () => {
          </section>
          <section class="flickit-newsletter-sec full-width">
             <div class="container-fluid container-xs">
-               <div class="row flickit-row">
+               <div class="row  flickit-row">
                   <div class="col-md-12">
-                     <div class="heading-sm">Insurance Designed for <span>Today’s Ecosystems</span>.
-                        We’re
-                        Building Insurance fit for the future
+                     <div class="heading-sm">Insurance Designed for <span>Today’s Ecosystems </span>
+                        We’re Building Insurance fit for the future
                      </div>
                      <form class="">
                         <div class="custom-input-group input-group mb-3">
@@ -238,11 +238,12 @@ const Home = () => {
          </section>
          <section class="flickit-download-app-sec ">
             <div class="container container-xs">
-               <div class="row flickit-row d-flex align-items-center justify-content-center">
+               <div class="row g-0 flickit-row d-flex align-items-center justify-content-center">
                <div class="col-md-6 col-lg-5 col-xl-6">
                      <div class="flickit-app-img">
                         <img alt="phone" class="flickit-img" src={require('../static/img/phone-mockup.png').default } />
-                        <img alt="phone-tablet"  class="phone-img-tablet" src={require('../static/img/phone.png').default } />
+                  
+                        <img alt="phone-tablet"  class="phone-img-tablet" src={require('../static/img/phone-mockup-tablet.png').default } />
                         <img alt="phone-mob"  class="phone-img-mob" src={require('../static/img/phone-mob-screen.png').default } />
 
                      </div>
@@ -250,7 +251,7 @@ const Home = () => {
                   <div class="col-md-6 col-lg-7 col-xl-6">
                      <div class="flickit-content">
                         <div class="heading-sm">Download our Latest App Now for <span>New Experience</span></div>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consect</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consect.</p>
                         <div class="app-buttons">
                            <button type="button" class="btn p-0"><img alt="google-play-store" src={require('../static/img/playstore.png').default} /></button>
                            <button type="button" class="btn p-0"><img alt="app-store" src={require('../static/img/app-store.png').default} /></button>

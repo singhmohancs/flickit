@@ -1,53 +1,56 @@
 body {
 	font-family: $font-family !important;
 	background: transparent;
+    font-size: 14px;
 }
 
 .container {
-	max-width: 1460px !important;
+    max-width: 1544px !important;
+ 
 	@media screen and(max-width: 1194px) and(min-width:768px) {
 		max-width: 100% !important;
-		padding: 0px 40px !important;
+		padding: 0px  px-rem(40px)!important;
 	}
     @media screen and(max-width: 767px) and(min-width:320px) {
 	
-		padding: 0px 16px !important;
+		padding: 0px  px-rem(16px) !important;
 	}
 }
 
 .container-xs {
-	max-width: 1216px !important;
+	max-width: 100% !important;
+
 	@media screen and(max-width: 1194px) and(min-width:992px) {
 		max-width: 100% !important;
-		padding: 0px 105px !important;
+		padding: 0px  px-rem(105px) !important;
 	}
     @media screen and(max-width: 991px) and(min-width:320px) {
 		max-width: 100% !important;
-		padding: 0px 32px !important;
+		padding: 0px  px-rem(32px) !important;
 	}
   
 }
 
 .mt-60 {
-	margin-top: 60px;
+	margin-top:  px-rem(60px);
 }
 
 .pb-200 {
-	padding-bottom: 200px;
+	padding-bottom:  px-rem(200px);
     @media screen and(max-width: 1194px)and(min-width:768px) {
-		padding-bottom:180px;
+		padding-bottom: px-rem(180px);
 	}
 	@media screen and(max-width: 767px)and(min-width:320px) {
-		padding-bottom:100px;
+		padding-bottom: px-rem(100px);
 	}
 }
 .pb-220 {
-	padding-bottom: 220px;
+	padding-bottom:  px-rem(220px);
     @media screen and(max-width: 1194px)and(min-width:768px) {
-		padding-bottom:180px;
+		padding-bottom: px-rem(180px);
 	}
 	@media screen and(max-width: 767px)and(min-width:320px) {
-		padding-bottom:100px;
+		padding-bottom: px-rem(100px);
 	}
 }
 .pt-120 {
@@ -56,25 +59,25 @@ body {
 }
 
 .pb-135 {
-	padding-bottom: 135px;
+	padding-bottom:  px-rem(135px);
   
 	@media screen and(max-width: 767px)and(min-width:320px) {
-		padding-bottom:60px;
+		padding-bottom: px-rem(60px);
 	}
 }
 
 .heading-sm {
 	font-size: $medium-font;
-	line-height: 48px;
+	line-height:  px-rem(48px);
 	font-weight: bold;
 	@media screen and(max-width: 1194px) and(min-width:768px) {
-		font-size: 24px;
-		line-height: 48px;
+		font-size:   rem(24px);
+		line-height:  px-rem(48px);
 	}
 	@media screen and (max-width: 767px) and (min-width: 320px) {
-		font-size: 20px;
-		line-height: 30px;
-		margin-bottom: 24px;
+		font-size:   rem(20px);
+		line-height:  px-rem(30px);
+		margin-bottom:  px-rem(24px);
 		text-align: center;
 	}
 	span {
@@ -84,27 +87,27 @@ body {
 
 .seperater {
 	height: 2px !important;
-	background-color: $gray-400;
+	background-color: $gray-50;
 	opacity: 1;
-	max-width: 1190px;
+	max-width: 1226px;
 	margin: 0px auto;
 	@media screen and(max-width: 1194px) and(min-width:992px) {
 		max-width: 100% !important;
-		margin: 0px 105px !important;
+		margin: 0px  px-rem(105px) !important;
 	}
 	@media screen and(max-width: 991px) and(min-width:320px) {
-		margin: 0px 32px !important;
+		margin: 0px  px-rem(32px )!important;
 	}
 }
 
 .btn-header {
-	border-radius: 27px !important;
-	padding: 15px 44px !important;
+	border-radius:  px-rem(27px) !important;
+	padding:  px-rem(15px)  px-rem(44px) !important;
 }
 
 .full-width {
 	max-width: 100%;
-	background: $gray-200;
+	background: $gray-10;
 }
 
 .wrapper {
@@ -131,28 +134,33 @@ button{
 
 /**app-btns**/
 .app-buttons {
-	margin-top: 40px;
+	margin-top:  px-rem(40px);
 
 	@media screen and (max-width: 767px) and (min-width: 320px) {
-		padding-top: 40px !important;
+		padding-top:  px-rem(40px) !important;
 		justify-content: center;
 		margin: 0px auto !important;
 		display: flex;
 
 		img {
+		
 			@media screen and (max-width: 767px) and (min-width: 320px) {
-				max-width: 124px;
+				max-width:  px-rem(124px) !important;
+				height: px-rem(40px);
 				width: 100%; 
 			}
 		}
 	}
 
 	.btn {
+		img{
+			max-width:  px-rem(152px);
+		}
 		&:not(:last-child) {
-			margin-right: 24px;
+			margin-right:  px-rem(24px);
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
-				margin-right: 16px;
+				margin-right:  px-rem(16px);
 
 			}
 		}

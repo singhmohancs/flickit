@@ -1,43 +1,53 @@
 .custom-input-group{
     &.input-group{
-        max-width:420px;
+        max-width:px-rem(420px);
         width:100%;
         margin: 32px auto 0px !important;
         height:54px;
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: 40px !important;
+            margin-top: px-rem(40px) !important;
         }
       
         .form-control{
             background: $white;
-            border: 1px solid rgba(141, 141, 141, 0.4);
+            border: 1px solid rgba(141, 141, 141, 0.6);
             box-sizing: border-box;
-            border-radius: 6px;
-            padding:0px 24px;
-            font-size: 16px !important;
-            border-right: 0px;
+            border-radius: px-rem(6px);
+            padding:0px px-rem(24px);
+            font-size: rem(16px) !important;
+            border-right: none;
+            max-width: px-rem(307px);
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                padding:0px 16px;
-                font-size: 14px !important;
+                padding:0px px-rem(16px);
+                font-size:  rem(14px) !important;
             }
         
             &:focus{
                 outline:none;
-                border:1px solid $primary;
+         border:1px solid $primary;
                 box-shadow: none;
-            }
-
+                border-right: none;
+            
+        }
         }
         .btn{
-            height: 54px;
-            padding: 15px 32px;
+            width:px-rem(118px);
+            height: px-rem(54px);
+            position: absolute;
+            right: -2px;
             font-weight: bold;
-            border-radius: 6px;
-            @media screen and (max-width: 767px) and (min-width: 320px) {
-                padding: 15px 24px;
+            border-radius: px-rem(6px);
+          
+            z-index: 9999;
+            @media screen and (max-width: 567px) and (min-width: 320px) {
+               position: inherit;
             }
 
         }
+       
+      
 
     }
 

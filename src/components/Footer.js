@@ -1,3 +1,4 @@
+import { LinkContainer } from 'react-router-bootstrap'
 const Footer = () => {
   const year = new Date().getFullYear()
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
 
                   <div class="footer-widget">
                      <div class="footer-logo">
-                        <a class=" m-0" href="#"><img alt ="logo"src={require('../static/img/Logo.png').default} /></a>
+                        <a class=" m-0" href="#"><img alt ="logo"src={require('../static/img/Flickit.png').default} /></a>
                      </div>
                      <div class="footer-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
@@ -30,7 +31,7 @@ const Footer = () => {
                         <li><a href="#">Insurance </a></li>
                         <li><a href="#">Company </a></li>
                         <li><a href="#">Help</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><LinkContainer to='/about'><a href="#"> About Us</a></LinkContainer></li>
                      </ul>
                   </div>
 
