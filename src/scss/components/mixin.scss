@@ -3,6 +3,8 @@
   @return $value / ($value * 0 + 1);
 }
 
+
+
 @function rem($pxValue) {
-  @return #{stripUnit($pxValue) / 16 }em;
+  @return #{stripUnit($pxValue) / 16 }rem;
 }

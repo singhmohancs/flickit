@@ -33,19 +33,19 @@
 
     .footer-heading {
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: 40px;
+            margin-top: rem(40px);
 
         }
 
         h3 {
             font-size: $normal-font;
-            line-height: 24px;
+            line-height: rem(24px);
             color: $gray-900;
             font-weight: bold;
-            margin-bottom: 32px;
+            margin-bottom: rem(32px);
 
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                margin-bottom: 24px;
+                margin-bottom: rem(24px);
 
             }
 
@@ -65,10 +65,10 @@
         li {
 
             &:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: rem(20px);
 
                 @media screen and (max-width: 767px) and (min-width: 320px) {
-                    margin-bottom: 25px;
+                    margin-bottom: rem(25px);
 
                 }
             }
@@ -76,7 +76,7 @@
 
         a {
             font-size: $xsmall-font;
-            line-height: 24px;
+            line-height: rem(24px);
             color: $gray-500;
             text-decoration: none;
 
@@ -88,10 +88,10 @@
     }
 
     .footer-text {
-        margin-top: 24px;
+        margin-top: rem(24px);
         &.copyright-content{
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                margin-top: 40px;
+                margin-top: rem(40px);
     
             }
             p{
@@ -104,15 +104,15 @@
         }
 
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: 32px;
-            padding: 0px 16px;
+            margin-top: rem(32px);
+            padding: 0px rem(16px);
 
 
         }
 
         p {
             color: $gray-800;
-            line-height: 27px;
+            line-height: rem(27px);
 
         }
     }
@@ -121,6 +121,10 @@
 .footer-cols {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1194px) and (min-width: 768px) {
+    justify-content: inherit;
+
+    }
 
     @media screen and (max-width: 991px) and (min-width: 768px) {
         flex-wrap: wrap;
@@ -152,19 +156,23 @@
 
             @media screen and (max-width: 1194px) and (min-width: 992px) {
 
-                margin-right: 88px;
+                margin-right: rem(88px);
             }
 
             @media screen and (max-width: 991px) and (min-width: 768px) {
 
-                margin-right: 26px;
+                margin-right: rem(26px);
             }
         }
 
         &:first-child {
             width: 100%;
-            max-width: 215px;
-            margin-right: 120px;
+            max-width: rem(215px);
+            margin-right: rem(120px);
+            @media screen and (max-width: 1194px) and (min-width: 768px) {
+                margin-right: rem(71px);
+
+            }
             @media screen and (max-width: 991px) and (min-width: 768px) {
                 max-width: 100%;
 
@@ -179,28 +187,36 @@
         }
         &:nth-child(2) {
           
-            margin-right: 117px;
+            margin-right: rem(117px);
+            @media screen and (max-width: 1194px) and (min-width: 768px) {
+                margin-right: 98px;
+
+            }
           
     }
     &:nth-child(3) {
           
-        margin-right: 108px;
+        margin-right: rem(108px);
+        @media screen and (max-width: 1194px) and (min-width: 768px) {
+            margin-right: rem(84px);
+
+        }
       
 }
 }
 
     .footer-email-info {
-        margin-top: 32px;
+        margin-top: rem(32px);
 
         @media screen and (max-width: 991px) and (min-width: 768px) {
 
-            margin-bottom: 32px;
+            margin-bottom: rem(32px);
 
         }
 
         p {
           
-                padding-top: 10px;
+                padding-top: rem(10px);
 
             
         }
