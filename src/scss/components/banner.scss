@@ -129,16 +129,13 @@
 		padding-top: px-rem(75px);
 		height: px-rem(595px);
 		margin-left: px-rem(70px);
-		img{
-			
-			max-width: px-rem(453px);
-			@media screen and(max-width: 567px) and(min-width:320px) {
-				max-width: px-rem(257px);
-			
-			}
-			
-
+		max-width:453px;
+		@media screen and(max-width: 567px) and(min-width:320px) {
+			max-width: 257px;
+		
 		}
+		
+	
 
 		@media screen and(max-width: 1194px) and(min-width:568px) {
 			height: 455px;
@@ -155,6 +152,7 @@
 
 			margin-left: 0;
 			padding-top: px-rem(45px);
+			margin:0px auto;
 
 		}
 
