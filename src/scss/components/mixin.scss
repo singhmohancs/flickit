@@ -4,7 +4,10 @@
 }
 
 
-
 @function rem($pxValue) {
+  @return #{stripUnit($pxValue) / 14 }em;
+}
+
+@function px-rem($pxValue) {
   @return #{stripUnit($pxValue) / 16 }rem;
 }

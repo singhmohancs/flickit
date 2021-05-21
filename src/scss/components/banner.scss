@@ -1,7 +1,7 @@
 .banner {
 	
 	background-image: url("../../static/img/bg-shape.png");
-	min-height: rem(909px);
+	min-height: px-rem(909px);
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -12,15 +12,15 @@
 
 	@media screen and(max-width: 767px) and(min-width:320px) {
 		background-image: url("../../static/img/hero-bg-mob.png");
-		min-height: rem(500px);
+		min-height: px-rem(500px);
 		background-position: top;
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}
 
 	.banner-row {
-		padding-left:  rem(44px);
-		padding-right:  rem(36px);
+		padding-left:  px-rem(44px);
+		padding-right:  px-rem(36px);
 		@media screen and (max-width: 1194px) and (min-width: 320px) {
 			padding-left: 0;
 			padding-right: 0;
@@ -39,14 +39,14 @@
 	}
 
 	.banner-text {
-		    padding-top: rem(18px);
+		    padding-top: px-rem(18px);
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-			margin-bottom: rem(100px);
-		padding-top: rem(34px);
+			margin-bottom: px-rem(100px);
+		padding-top: px-rem(34px);
 		}
 
 		@media screen and(max-width:1194px) and(min-width:768px) {
-			padding-top: rem(80px);
+			padding-top: px-rem(80px);
 
 		}
 
@@ -59,19 +59,19 @@
 
 		h1 {
 			font-size: $large-font;
-			line-height: rem(72px);
-			color: $gray-900;
+			line-height: px-rem(72px);
+			color: $gray-90;
 			font-weight: bold;
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
 				font-size: rem(24px);
-				line-height: rem(42px);
+				line-height: px-rem(42px);
 				text-align: center;
 			}
 
 			@media screen and(max-width:1194px) and(min-width:768px) {
 				font-size: rem(42px);
-				line-height: rem(64px);
+				line-height: px-rem(64px);
 			}
 
 			span {
@@ -80,41 +80,41 @@
 		}
 
 		p {
-			margin-top: rem(32px);
+			margin-top: px-rem(32px);
 			font-size: $normal-font;
-			line-height: rem(36px);
-			color:$gray-800;
+			line-height: px-rem(36px);
+			color:$gray-80;
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
 				font-size: rem(14px);
-				line-height: rem(21px);
-				margin-top: rem(16px);
+				line-height: px-rem(21px);
+				margin-top: px-rem(16px);
 				text-align: center;
 			}
 
 			@media screen and(max-width:1194px) and(min-width:768px) {
-				margin-top: rem(24px);
+				margin-top: px-rem(24px);
 				font-size: rem(20px);
 			}
 		}
 
 		.btn {
 			font-weight: bold;
-			max-width: rem(215px);
+			max-width: px-rem(215px);
 			width: 100%;
 			box-shadow: 0px 12px 24px rgba(12, 96, 255, 0.25);
-			font-size: rem(18px);
-			border-radius:rem(30px) !important;
+			font-size:rem(18px);
+			border-radius:px-rem(30px) !important;
 
 			@media screen and (max-width: 767px) and (min-width: 320px) {
-				margin-top: rem(32px);
-				max-width: rem(184px);
+				margin-top: px-rem(32px);
+				max-width: px-rem(184px);
 				font-size: rem(16px);
 			}
 
 			@media screen and(max-width:1194px) and(min-width:768px) {
-				margin-top: rem(40px);
-				max-width: rem(184px);
+				margin-top: px-rem(40px);
+				max-width: px-rem(184px);
 				font-size: rem(16px);
 			}
 		}
@@ -126,35 +126,34 @@
 		justify-content: center;
 		position: relative;
 		z-index: 99;
-		padding-top: rem(75px);
-		height: rem(595px);
-		margin-left: rem(70px);
-		img{
-			
-			max-width: rem(453px);
-			@media screen and(max-width: 567px) and(min-width:320px) {
-				max-width: rem(257px);
-			
-			}
-			
-
+		padding-top: px-rem(75px);
+		height: px-rem(595px);
+		margin-left: px-rem(70px);
+		
+		@media screen and(max-width: 567px) and(min-width:320px) {
+			max-width: 257px;
+		
 		}
+		
+	
 
 		@media screen and(max-width: 1194px) and(min-width:568px) {
 			height: 455px;
-			padding-top: rem(35px);
-			margin-left: rem(40px);
+			padding-top: px-rem(35px);
+			margin-left: px-rem(40px);
 		}
 
 		@media screen and (max-width: 567px) and (min-width: 320px) {
-			height: rem(336px);
+			height: px-rem(336px);
 			margin: 0;
 		}
 
 		@media screen and (max-width: 767px) and (min-width: 320px) {
-
+			width: 100%;
+			max-width: 100%;
 			margin-left: 0;
-			padding-top: rem(45px);
+			padding-top: px-rem(45px);
+			margin:0px auto;
 
 		}
 
@@ -169,7 +168,7 @@
 			content: '';
 			position: absolute;
 			width: 100%;
-			height: rem(442px);
+			height: px-rem(442px);
 			z-index: -1;
 		
 			background-image: url("../../static/img/bg-deco.png");
@@ -179,12 +178,12 @@
 			background-position: center;
 
 			@media screen and(max-width: 1194px) and(min-width:568px) {
-				height: rem(352px);
+				height: px-rem(352px);
 
 			}
 
 			@media screen and(max-width: 567px) and(min-width:320px) {
-				height: rem(238px);
+				height: px-rem(238px);
 
 			}
 		}
@@ -194,10 +193,10 @@
 			border: 3px solid $white;
 			box-sizing: border-box;
 			position: absolute;
-			border-radius: rem(11px);
+			border-radius: px-rem(11px);
 			width: 100%;
-			max-width: rem(300px);
-			min-height: rem(80px);
+			max-width: px-rem(300px);
+			min-height: px-rem(80px);
 			-webkit-box-shadow: -6px 8px 42px 8px rgba(0, 87, 255, 0.12);
 			box-shadow: -6px 8px 42px 8px rgba(0, 87, 255, 0.12);
 
@@ -206,26 +205,26 @@
 			justify-content: center;
 
 			@media screen and(max-width: 1194px) and(min-width:568px) {
-				max-width: rem(244px);
-				min-height: rem(64px);
+				max-width: px-rem(244px);
+				min-height: px-rem(64px);
 			}
 
 			@media screen and (max-width: 567px) and (min-width: 320px) {
-				max-width: rem(184px);
-				min-height: rem(48px);
+				max-width: px-rem(184px);
+				min-height: px-rem(48px);
 			}
 
 			img {
-				margin-right: rem(15px);
+				margin-right: px-rem(15px);
 
 				@media screen and (max-width: 767px) and (min-width: 320px) {
-					margin-right: rem(10px);
-					max-width: rem(22px);
+					margin-right: px-rem(10px);
+					max-width: px-rem(22px);
 				}
 
 				@media screen and(max-width: 1194px) and(min-width:767px) {
 					width: 100%;
-					max-width: rem(38px);
+					max-width: px-rem(38px);
 				}
 			}
 
@@ -237,7 +236,7 @@
 
 				@media screen and (max-width: 767px) and (min-width: 320px) {
 					font-size: rem(14px);
-					line-height: rem(21px);
+					line-height: px-rem(21px);
 				}
 
 				@media screen and(max-width:1194px) and(min-width:767px) {
@@ -293,13 +292,14 @@
 }
 
 .banner-col-right {
+	
 	@media screen and (max-width: 767px) and (min-width: 568px) {
-		width: rem(600px) !important;
+		width: px-rem(600px) !important;
 		flex-shrink: inherit !important;
 	}
 
 	@media screen and (max-width: 567px) and (min-width: 320px) {
-		width: rem(400px) !important;
+		width: px-rem(400px) !important;
 		flex-shrink: inherit !important;
 	}
 

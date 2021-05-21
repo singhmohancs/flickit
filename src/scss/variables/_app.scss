@@ -1,6 +1,6 @@
 // Theme colors
 @import "../components/mixin";
-$font-size-base: 16px !default; // Assumes the browser default, typically `16px`
+$font-size-base: 14px !default; // Assumes the browser default, typically `16px`
 
 
 
@@ -8,19 +8,17 @@ $blue: #0c60ff !default;
 $blue-200: #0057ff;
 $gray-dark:#4b4b4b;
 $gray-light: #ebf0ff !default;
-$white-50:#f1f1f1;
-$gray-20:#444a4b;
+$white-50:#f1f1f1 !default;
+$gray-20:#444a4b !default;
 $gray-10: #fafbff !default;
+$gray-30: #8d8d8d!default;
+$gray-50:#dae2f6 !default;
+$gray-80: #45454b !default;
+$gray-90: #171731 !default;
 
 $white: #fff !default;
 
-$gray-300: #ebf0ff !default;
-$gray-400: #dae2f6 !default;
-$gray-500: #8d8d8d !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #45454b !default;
-$gray-900: #171731 !default;
+
 $black: #000 !default;
 
 $primary: $blue !default;

@@ -1,80 +1,83 @@
 .flickit-navbar {
-	min-height: rem(100px);
+	min-height: px-rem(100px);
 	padding: 0;
 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0,  0.25);
+
 	@media screen and (max-width: 1194px) and (min-width: 768px) {
-		min-height: rem(90px);
+		min-height: px-rem(90px);
 	}
 	@media screen and (max-width: 991px) and (min-width: 768px) {
 		min-height: 100%;
-		padding-top: rem(18.657px);
-		padding-bottom: rem(18.657px);
+		padding-top: px-rem(18.657px);
+		padding-bottom: px-rem(18.657px);
 	}
 
 	@media screen and (max-width: 767px) and (min-width: 320px) {
 		min-height: 100%;
-		padding-top: rem(18.657px);
-		padding-bottom: rem(18.657px);
+		padding-top: px-rem(18.657px);
+		padding-bottom: px-rem(18.657px);
 
 	}
 
 	.navbar-brand {
 		padding:0;
-		padding-left: rem(34px);
+		padding-left: px-rem(34px);
+		
 		@media screen and (max-width: 1194px) and (min-width: 320px) {
 			padding-left: 0;
 			
 			
 
 		}
-		img {
-			max-width: rem(166px);
-			width: 100%;
-			@media screen and (max-width: 1194px) and (min-width: 320px) {
-				max-width: rem(152px);
-			}
+		@media screen and (max-width: 1194px) and (min-width: 320px) {
+			max-width:152px;
+		}
 
-			@media screen and (max-width: 767px) and (min-width: 320px) {
-				max-width: rem(125px);
-			}
+		@media screen and (max-width: 767px) and (min-width: 320px) {
+			max-width: 125px;
+		}
+		img {
+		
+		width:100%;
 		}
 	}
 
 	.navbar-nav {
-		margin-left: rem(120px);
+		margin-left: px-rem(120px);
 
 		@media screen and (max-width: 1194px) and (min-width: 768px) {
-			margin-left: rem(80px);
+			margin-left: px-rem(80px);
 		}
 
 		@media screen and (max-width: 991px) and (min-width: 320px) {
 			margin-left: 0;
-		    margin-top: rem(20px);
+		    margin-top: px-rem(20px);
 			
 		}
 	
 
 		.nav-item {
 			&:not(:last-child) {
-				margin-right: rem(54px);
+				margin-right: px-rem(54px);
 
 				@media screen and (max-width: 1194px) and (min-width: 1040px) {
-					margin-right: rem(44px);
+					margin-right: px-rem(44px);
 				}
 				@media screen and (max-width: 1039px) and (min-width: 992px) {
-					margin-right: rem(38px);
+					margin-right: px-rem(38px);
 				}
 
 				@media screen and (max-width: 991px) and (min-width: 320px) {
 					margin-right: 0;
-					margin-bottom: rem(20px);
+					margin-bottom: px-rem(20px);
 				}
 			}
 
 			.nav-link {
 				padding: 0;
 				font-size: rem(18px);
-				color: $gray-500;
+				color: $gray-30;
 				@media screen and (max-width: 1194px) and (min-width: 991px) {
 					font-size: rem(16px);
 				}
@@ -89,26 +92,26 @@
 	}
 
 	.nav-right {
-	    padding-right: rem(40px);
+	    padding-right: px-rem(40px);
 		@media screen and (max-width: 1194px) and (min-width: 320px) {
 			padding-left: 0;
 			padding-right: 0;
-			padding-bottom: rem(0px);
+			padding-bottom: px-rem(0px);
 
 		}
 
 		.btn {
 			font-size: $xsmall-font;
-			height:rem(54px);
+			height:px-rem(54px);
 
 			&:not(:last-child) {
-				margin-right: rem(32px);
+				margin-right: px-rem(32px);
 
 			}
 		}
 
 		.btn-link {
-			color: $gray-500;
+			color: $gray-30;
 			text-decoration: none;
 		}
 	}

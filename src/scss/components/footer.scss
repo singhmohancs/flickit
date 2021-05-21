@@ -17,15 +17,15 @@
     .footer-widget {
         .footer-logo {
             margin-bottom: 24px;
+            max-width: 135px;
+            width:100%;
+            @media screen and (max-width: 767px) and (min-width: 320px) {
+                max-width: 165px;
+                margin:0px auto;
 
-            img {
-                max-width: 135px;
-
-                @media screen and (max-width: 767px) and (min-width: 320px) {
-                    max-width: 165px;
-
-                }
-
+            }
+            img{
+                width:100%;
             }
         }
 
@@ -33,19 +33,19 @@
 
     .footer-heading {
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: rem(40px);
+            margin-top: px-rem(40px);
 
         }
 
         h3 {
             font-size: $normal-font;
-            line-height: rem(24px);
-            color: $gray-900;
+            line-height: px-rem(24px);
+            color: $gray-90;
             font-weight: bold;
-            margin-bottom: rem(32px);
+            margin-bottom: px-rem(32px);
 
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                margin-bottom: rem(24px);
+                margin-bottom: px-rem(24px);
 
             }
 
@@ -65,10 +65,10 @@
         li {
 
             &:not(:last-child) {
-                margin-bottom: rem(20px);
+                margin-bottom: px-rem(20px);
 
                 @media screen and (max-width: 767px) and (min-width: 320px) {
-                    margin-bottom: rem(25px);
+                    margin-bottom: px-rem(25px);
 
                 }
             }
@@ -76,8 +76,8 @@
 
         a {
             font-size: $xsmall-font;
-            line-height: rem(24px);
-            color: $gray-500;
+            line-height: px-rem(24px);
+            color: $gray-30;
             text-decoration: none;
 
             &:hover {
@@ -88,13 +88,14 @@
     }
 
     .footer-text {
-        margin-top: rem(24px);
+        margin-top: px-rem(24px);
         &.copyright-content{
             @media screen and (max-width: 767px) and (min-width: 320px) {
-                margin-top: rem(40px);
+                margin-top: px-rem(40px);
     
             }
             p{
+              
                 @media screen and (max-width: 767px) and (min-width: 320px) {
                     font-size: rem(14px);
         
@@ -104,15 +105,16 @@
         }
 
         @media screen and (max-width: 767px) and (min-width: 320px) {
-            margin-top: rem(32px);
-            padding: 0px rem(16px);
+            margin-top: px-rem(32px);
+            padding: 0px px-rem(16px);
 
 
         }
 
         p {
-            color: $gray-800;
-            line-height: rem(27px);
+            color: $gray-80;
+            line-height: px-rem(27px);
+            font-size: rem(16px);
 
         }
     }
@@ -156,21 +158,21 @@
 
             @media screen and (max-width: 1194px) and (min-width: 992px) {
 
-                margin-right: rem(88px);
+                margin-right: px-rem(88px);
             }
 
             @media screen and (max-width: 991px) and (min-width: 768px) {
 
-                margin-right: rem(26px);
+                margin-right: px-rem(26px);
             }
         }
 
         &:first-child {
             width: 100%;
-            max-width: rem(215px);
-            margin-right: rem(120px);
+            max-width: px-rem(215px);
+            margin-right: px-rem(120px);
             @media screen and (max-width: 1194px) and (min-width: 768px) {
-                margin-right: rem(71px);
+                margin-right: px-rem(71px);
 
             }
             @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -187,7 +189,7 @@
         }
         &:nth-child(2) {
           
-            margin-right: rem(117px);
+            margin-right: px-rem(117px);
             @media screen and (max-width: 1194px) and (min-width: 768px) {
                 margin-right: 98px;
 
@@ -196,9 +198,9 @@
     }
     &:nth-child(3) {
           
-        margin-right: rem(108px);
+        margin-right: px-rem(108px);
         @media screen and (max-width: 1194px) and (min-width: 768px) {
-            margin-right: rem(84px);
+            margin-right: px-rem(84px);
 
         }
       
@@ -206,18 +208,18 @@
 }
 
     .footer-email-info {
-        margin-top: rem(32px);
+        margin-top: px-rem(32px);
 
         @media screen and (max-width: 991px) and (min-width: 768px) {
 
-            margin-bottom: rem(32px);
+            margin-bottom: px-rem(32px);
 
         }
 
         p {
           
-                padding-top: rem(10px);
-
+                padding-top: px-rem(10px);
+                font-size: rem(16px);
             
         }
 
