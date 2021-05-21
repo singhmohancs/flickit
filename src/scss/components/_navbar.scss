@@ -78,7 +78,7 @@
 			.nav-link {
 				padding: 0;
 				font-size: rem(18px);
-				color: $gray-30;
+				color: $gray-90;
 				border-bottom: 2px solid transparent;
 				
 				@media screen and (max-width: 1194px) and (min-width: 991px) {
@@ -115,7 +115,7 @@
 		}
 
 		.btn-link {
-			color: $gray-30;
+			color: $gray-90;
 			text-decoration: none;
 		}
 	}
