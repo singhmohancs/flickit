@@ -1,10 +1,11 @@
 .about-banner {
 	background-color: $gray-10;
-	min-height: 600px;
+	min-height: px-rem(600px);
 	display: flex;
 	align-items: center;
     @media screen and(max-width:991px) and(min-width:320px) {
-      padding-top:50px;
+      padding-top:px-rem(50px);
+      padding-bottom:px-rem(50px);
     }
     .flickit-content{
         @media screen and(max-width:767px) and(min-width:320px) {
@@ -14,7 +15,7 @@
         }
     }
 	.flickit-image {
-		max-width: 600px;
+		max-width: px-rem(600px);
 		margin: 0px auto;
         @media screen and(max-width:767px) and(min-width:320px) {
             max-width: 100% !important;
@@ -26,20 +27,21 @@
             }
 		}
 	}
+    .about-banner-row {
+        padding-left: 2.75rem;
+        padding-right: 2.25rem;
+        @media screen and(max-width:1194px) and(min-width:320px) {
+            padding-left: 0;
+            padding-right:0 ;
+        }
+    }
+    
 }
 
-.about-banner-row {
-	padding-left: 2.75rem;
-	padding-right: 2.25rem;
-    @media screen and(max-width:1194px) and(min-width:320px) {
-        padding-left: 0;
-        padding-right:0 ;
-    }
-}
 
 .about-sec {
     .row {
-		max-width: 1166px;
+		max-width: px-rem(1166px);
 		margin: 0px auto;
        
         
@@ -69,7 +71,7 @@
 	.flickit-content {
 		p {
 			width: 100%;
-			max-width: 720px;
+			max-width: px-rem(720px);
 			margin: 0px auto;
             @media screen and(max-width:991px) and(min-width:320px) {
                 max-width: 100%;
@@ -80,11 +82,11 @@
 	}
 	.flickit-image {
         @media screen and(max-width:991px) and(min-width:320px) {
-           margin-top:30px;
+           margin-top:px-rem(30px);
   
       }
 		img {
-			max-width: 400px;
+			max-width: px-rem(400px);
             width:100%;
             @media screen and(max-width:991px) and(min-width:320px) {
               
@@ -93,7 +95,7 @@
          }
          @media screen and(max-width:767px) and(min-width:320px) {
               
-           max-width:250px;
+           max-width:px-rem(250px);
   
       }
 		}
@@ -102,14 +104,14 @@
 
 .steps-info {
 	text-align: center;
-	padding: 10px;
+	padding:  px-rem(10px);
 	position: relative;
 	img {
 		width: 100%;
-		max-width: 60px;
+		max-width:  px-rem(60px);
 	}
 	.flickit-content {
-		margin-top: 20px;
+		margin-top: px-rem(20px);
 		position: relative;
 		&:nth-child(-n+1) {
 			&:after {
@@ -125,9 +127,9 @@
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			border-right: 1px dashed $gray-90;
+			border-right: 1px dashed $gray-30;
 			width: 1px;
-			height: 100px;
+			height: px-rem(100px);
 			right: -9px;
             @media screen and(max-width:991px) and(min-width:320px) {
               display: none;
@@ -138,7 +140,7 @@
 }
 
 .flickit-card {
-	margin-top: 40px !important;
+	margin-top: px-rem(40px) !important;
     flex-wrap: nowrap;
     @media screen and(max-width:991px) and(min-width:320px) {
         flex-wrap: wrap;

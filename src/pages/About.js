@@ -112,7 +112,7 @@ const About = () => {
       </div>
    </div>
 </section>
-<section class="about-sec about-info-3  pb-200    ">
+<section class="about-sec about-info-3  pb-120    ">
    <div class="container  ">
       <div class="flickit-row g-0 row  flex-row-reverse align-items-center">
          <div class="col-lg-6 col-md-12">
