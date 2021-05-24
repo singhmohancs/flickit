@@ -1,0 +1,205 @@
+.about-banner {
+	background-color: $gray-10;
+	min-height: px-rem(600px);
+	display: flex;
+	align-items: center;
+    @media screen and(max-width:991px) and(min-width:320px) {
+      padding-top:px-rem(50px);
+      padding-bottom:px-rem(50px);
+    }
+    .flickit-content{
+        @media screen and(max-width:767px) and(min-width:320px) {
+            padding-left: 0;
+            padding-right:0 ;
+            text-align: center;
+        }
+    }
+	.flickit-image {
+		max-width: px-rem(600px);
+		margin: 0px auto;
+        @media screen and(max-width:767px) and(min-width:320px) {
+            max-width: 100% !important;
+        }
+		img {
+			width: 100%;
+            @media screen and(max-width:767px) and(min-width:320px) {
+                max-width: 100% !important;
+            }
+		}
+	}
+    .about-banner-row {
+        padding-left: 2.75rem;
+        padding-right: 2.25rem;
+        @media screen and(max-width:1194px) and(min-width:320px) {
+            padding-left: 0;
+            padding-right:0 ;
+        }
+    }
+    
+}
+
+
+.about-sec {
+    .row {
+		max-width: px-rem(1166px);
+		margin: 0px auto;
+       
+        
+    }
+    &.about-info-2{
+        .flickit-row{
+            @media screen and(max-width:991px) and(min-width:320px) {
+                flex-direction: column-reverse;
+     
+         }
+
+        }
+    }
+    &.about-info-3{
+        .flickit-row{
+            @media screen and(max-width:991px) and(min-width:320px) {
+                flex-direction: column-reverse !important;
+     
+         }
+
+        }
+    }
+    
+
+	
+	
+	.flickit-content {
+		p {
+			width: 100%;
+			max-width: px-rem(720px);
+			margin: 0px auto;
+            @media screen and(max-width:991px) and(min-width:320px) {
+                max-width: 100%;
+       
+           }
+		}
+	
+	}
+	.flickit-image {
+        @media screen and(max-width:991px) and(min-width:320px) {
+           margin-top:px-rem(30px);
+  
+      }
+		img {
+			max-width: px-rem(400px);
+            width:100%;
+            @media screen and(max-width:991px) and(min-width:320px) {
+              
+               margin:0px auto;
+     
+         }
+         @media screen and(max-width:767px) and(min-width:320px) {
+              
+           max-width:px-rem(250px);
+  
+      }
+		}
+	}
+}
+
+.steps-info {
+	text-align: center;
+	padding:  px-rem(10px);
+	position: relative;
+	img {
+		width: 100%;
+		max-width:  px-rem(60px);
+	}
+	.flickit-content {
+		margin-top: px-rem(20px);
+		position: relative;
+		&:nth-child(-n+1) {
+			&:after {
+				border-right: none !important;
+			}
+		}
+		h5 {
+			font-weight: bold;
+			font-size: rem(18px);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			border-right: 1px dashed $gray-30;
+			width: 1px;
+			height: px-rem(100px);
+			right: -9px;
+            @media screen and(max-width:991px) and(min-width:320px) {
+              display: none;
+       
+           }
+		}
+	}
+}
+
+.flickit-card {
+	margin-top: px-rem(40px) !important;
+    flex-wrap: nowrap;
+    @media screen and(max-width:991px) and(min-width:320px) {
+        flex-wrap: wrap;
+
+    }
+
+	.flickit-content {
+		max-width: 800px;
+		margin: 0px;
+	}
+}
+
+.flickit-card-list {
+	display: flex;
+	flex-wrap: wrap;
+    @media screen and(max-width:991px) and(min-width:320px) {
+      padding-left:px-rem(16px) !important;
+
+   }
+	li {
+		max-width: 45%;
+		flex: 0 0 45%;
+		width: 100%;
+		font-weight: 400;
+		font-size: rem(17);
+		margin-right: px-rem(10px);
+        @media screen and(max-width:991px) and(min-width:320px) {
+            max-width: 100%;
+          
+		flex: 0 0 100%;
+        @media screen and(max-width:767px) and(min-width:320px) {
+           &:before{
+               width:px-rem(18px);
+               height:px-rem(18px);
+
+           }
+      
+         }
+   
+       }
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+            @media screen and(max-width:991px) and(min-width:320px) {
+                max-width: 100%;
+                margin-right: 0;
+            flex: 0 0 100%;
+       
+           }
+		}
+	}
+}
+
+.flickit-insurance-services{
+    .container  {
+        @media screen and(max-width:767px) and(min-width:320px) {
+         padding:0px px-rem(32px) !important;
+   
+       }
+
+    }
+
+}
